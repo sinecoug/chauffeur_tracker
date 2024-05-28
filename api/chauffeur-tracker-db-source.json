@@ -1,0 +1,34 @@
+{
+  "family-members": [
+    {
+      "familyMemberName": "Faith Jaxon",
+      "email": "f.smith@gmail.com"
+      
+          },
+    {
+      "familyMemberName": "Aiden Issac",
+      "email": "a.issac@gmail.com"
+     
+    }
+    ],
+  "schedules": [
+    {
+      "scheduleId": "abcdef12345",
+      "familyMemberName": "Faith Jaxon",
+      "pickupLocation": "123 Main St, Springfield",
+      "dropoffLocation": "456 Elm St, Springfield",
+      "pickupTime": "2024-06-15T08:00:00Z",
+      "dropoffTime": "2024-06-15T08:30:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "scheduleId": "ghijkl67890",
+      "familyMemberName": "Aiden Issac",
+      "pickupLocation": "789 Oak St, Anytown",
+      "dropoffLocation": "321 Maple St, Anytown",
+      "pickupTime": "2024-06-16T09:00:00Z",
+      "dropoffTime": "2024-06-16T09:30:00Z",
+      "status": "Scheduled"
+    }
+    ]
+}
