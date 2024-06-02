@@ -2,17 +2,17 @@
 layout: page
 ---
 
-# Create a schedule
+# Create a driver
 
-Creates a driver's pick-up and drop-off [`schedules`](schedules).
-The request body contains the new driving schedule details.
-You must specify the required properties for the user.
+Creates a [`drivers`](drivers) object in the database.
+The request body contains the new driver's details.
+You must specify the required properties for the driver.
 
 ## URL
 
 ```shell
 
-{POST}{server_url}/schedules/
+{POST}{server_url}/drivers/
 ```
 
 ## Request headers
@@ -26,18 +26,15 @@ This request does not use any authorization. The endpoint is available to all us
 
 ## Request body
 
-In the request body, specify a JSON representation of the [`schedule`](schedules) object. The following table lists the properties that are required when you create a schedule.
+In the request body, specify a JSON representation of the [`drivers`](drivers) object. The following table lists the properties that are required when you create a driver object.
 
 | Property | Description | Type | Required | Notes |
 | -------------- | ------ | ------------ |------------ |------------ |
-| `driverID` | The ID of the driver resource to which this schedule is assigned. | number | Required |  |
-| `passenger` | Who the driver is to transport. | string | Required |  |
-| `pickupLocation` | Where the driver is to collect a passenger. | string | Required |  |
-| `dropoffLocation` | Where the driver is to drop off a passenger. | string | Required |  |
-| `pickupTime` | When the driver is to collect a passenger. | date-time | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time. |
-| `dropoffTime` | When the driver is to drop off a passenger. | date-time | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time. |
-| `status` | The status of the driving schedule. | string | Required |  |
-| `id` | The driving schedule's unique record ID.  | number | Required | The schedule id is auto-generated. See the return body. |
+| `driverName` | The driver's full name. | string | Required |  |
+| `driverIdentity` | The driver's primary role in relationship to the family. | string | Optional |Examples: Mom, Dad, Neighbor.  |
+| `cellPhone` | The driver's cell phone number. | string | Required |  |
+| `email` | The driver's email address. | string | Required | A unique email is required. |
+| `id` | The driver's unique record ID. | number | Required | The schedule id is auto-generated. See the return body. |
 
 ## Sample request
 
@@ -53,10 +50,11 @@ The POST body should look something like this. You can change the values of each
     }
 ``
 ]
+```
 
 ## Return body
 
-The following example shows the response. Note that the names should be the same as you used in your **Request body** and the response should include the new schedule id. The schedule id is automatically generated when the schedule is created.
+The following example shows the response. Note that the names should be the same as you used in your **Request body** and the response should include the new driver's id. The driver's id is automatically generated when the driver object is created.
 
 ```js
 [

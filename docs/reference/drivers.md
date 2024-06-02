@@ -42,7 +42,7 @@ The `drivers` resource supports these operations.
 
 * [Retrieve all drivers](drivers-get-all-drivers.md)
 * [Retrieve a specific driver](drivers-get-driver-by-id.md)
-* [Retrieve a driver by property](drivers-get-driver-by-filtered-property.md)
+* [Retrieve a driver by property](drivers-get-driver-by-property.md)
 
 ### CREATE (POST)
 
@@ -51,7 +51,7 @@ The `drivers` resource supports these operations.
 ### UPDATE (PUT/PATCH)
 
 * [Update a driver](drivers-update-schedule-by-id.md)
-* [Update a driver by property](drivers-update-schedule-property.md)
+* [Update a driver by property](drivers-update-schedule-by-property.md)
 
 ### DELETE
 

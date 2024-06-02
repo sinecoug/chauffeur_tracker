@@ -6,7 +6,7 @@ layout: page
 
 Creates a driver's pick-up and drop-off [`schedules`](schedules).
 The request body contains the new driving schedule details.
-You must specify the required properties for the user.
+You must specify the required properties for the schedule.
 
 ## URL
 

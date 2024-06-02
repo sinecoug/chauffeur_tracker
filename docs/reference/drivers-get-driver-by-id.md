@@ -3,29 +3,30 @@ layout: page
 ---
 # Retrieve a specific driver
 
-Retrieves a specific driver's pick-up and drop-off schedule.
-Returns an array of driving [`schedules`](schedules) objects for the specified driverId.
-Assumption: to return the correct driver, you must know the driverId to query.
+Returns an array of driving [`drivers`](drivers) objects for the specified `driverId`, if it exists.
+
+For example, you want to retrieve *driverId=1* from the database.
+Assumption: to return the correct driver, you must know the `driverId` to query.
 
 ## URL
 
 ```shell
 
-{GET}{server_url}/drivers/
+{GET}{server_url}/drivers/{id}
 ```
 
 ## Query parameters
 
-Assumption: you must know the id parameter of the driver you want to retrieve.
-
 | Property | Description | Type | Required | Notes |
 | -------------- | ------ | ------------ |------------ |------------ |
-| `driverID` | The ID of the driver resource you want to retrieve. | number | Required |  |
+| `driverId` | The record ID of the driver to return.  | number | Required |  |
 
 ---
 
 **NOTE:**
-To retrieve a driver's schedule by title or other property, further filter your [schedules request] properties.(schedules-get-schedule-by-filtered-property.md).
+To retrieve a driver by cell phone number or other property, further filter your [drivers request](drivers-get-driver-by-property.md).
+
+---
 
 ## Request headers
 
@@ -36,8 +37,6 @@ None
 None
 
 ## Return body
-
-The following example shows the response.
 
 ```js
 [

@@ -2,11 +2,11 @@
 layout: page
 ---
 
-# Update a specific driver
+# Update a driver by a property
 
-Updates a [`drivers`](drivers) object in the database.
+Updates and replaces property instances in the [`drivers`](drivers) object.
 
-For example, you want to update properties of *driverId=4* in the database.
+For example, you want to update a single property of *driverId=4* in the database.
 Assumption: to update the correct driver, you must know the `driverId` to query.
 
 The request body contains the updated driver's details.
@@ -15,7 +15,7 @@ The request body contains the updated driver's details.
 
 ```shell
 
-{PUT}{server_url}/drivers/{id}
+{PATCH}{server_url}/drivers/{id}
 ```
 
 ## Query parameters
@@ -27,7 +27,7 @@ The request body contains the updated driver's details.
 ---
 
 **NOTE:**
-{PUT} calls replace the [`drivers`](drivers) object. To update/replace single property instances in the [`drivers`](drivers) object, use a {PATCH} call in your [drivers request](drivers-update-driver-by-property.md).
+To update/replace the [`drivers`](drivers) object in its entirety, use a {PUT} call in your [drivers request](drivers-update-driver-by-id.md).
 
 ---
 
@@ -59,27 +59,25 @@ The PUT body should look something like this. You can change the values of each 
 ```js
 [
     {
-        "driverName": "SallyAnn Issac",
-        "driverIdentity": "Gran",
-        "cellPhone": "(555)555-9674",
-        "email": "s.issac@gmail.com"
+        "driverIdentity": "Nana",
+        "cellPhone": "(555)555-9874"
     }
 ]
 ```
 
 ## Return body
 
-The following example shows the response. Note that the names should be the same as you used in your **Request body** and the response should include the updated driver's id. The driver's id is automatically generated when the schedule is created.
+The following example shows the response. Note that the names should be the same as you used in your **Request body** and the response should include the udpated driver's id. The driver's id is automatically generated when the schedule is created.
 
 ```js
 [
     {
         "driverName": "SallyAnn Issac",
-        "driverIdentity": "Gran",
-        "cellPhone": "(555)555-9674",
+        "driverIdentity": "Nana",
+        "cellPhone": "(555)555-9874",
         "email": "s.issac@gmail.com",
         "id": "4"
-    }
+}
 ]
 ```
 

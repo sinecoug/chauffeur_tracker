@@ -22,6 +22,7 @@ As a developer, you can apply own branding and integrate additional services to 
 ## App integrations
 
 Consider the potential broader application of this web service, too.
+
 Elder care services, meals delivery...really, any organization that uses on-demand drivers to optimize pick-ups and drop-offs needs this service.
 
 ## Quickstart
