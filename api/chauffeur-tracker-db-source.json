@@ -1,34 +1,71 @@
 {
-  "family-members": [
+  "drivers": [
     {
-      "familyMemberName": "Faith Jaxon",
-      "email": "f.smith@gmail.com"
-      
-          },
-    {
-      "familyMemberName": "Aiden Issac",
-      "email": "a.issac@gmail.com"
-     
-    }
-    ],
-  "schedules": [
-    {
-      "scheduleId": "abcdef12345",
-      "familyMemberName": "Faith Jaxon",
-      "pickupLocation": "123 Main St, Springfield",
-      "dropoffLocation": "456 Elm St, Springfield",
-      "pickupTime": "2024-06-15T08:00:00Z",
-      "dropoffTime": "2024-06-15T08:30:00Z",
-      "status": "Scheduled"
+      "driverName": "Faith Jaxon",
+      "driverIdentity": "Mom",
+      "cellPhone": "(555)555-1234",
+      "email": "f.smith@gmail.com",
+      "id": "1"
     },
     {
-      "scheduleId": "ghijkl67890",
-      "familyMemberName": "Aiden Issac",
+      "driverName": "Aiden Issac",
+      "driverIdentity": "Dad",
+      "cellPhone": "(555)555-7954",
+      "email": "a.issac@gmail.com",
+      "id": "2"
+    },
+    {
+      "driverName": "Melanie Griffiths",
+      "driverIdentity": "Neighbor",
+      "cellPhone": "(555)794-4321",
+      "email": "m.griffiths@gmail.com",
+      "id": "3"
+    }
+  ],
+  "schedules": [
+    {
+      "driverId": "1",
+      "title": "School run",
+      "passenger": "Molly",
       "pickupLocation": "789 Oak St, Anytown",
       "dropoffLocation": "321 Maple St, Anytown",
       "pickupTime": "2024-06-16T09:00:00Z",
       "dropoffTime": "2024-06-16T09:30:00Z",
-      "status": "Scheduled"
+      "status": "Scheduled",
+      "id": "2"
+    },
+    {
+      "driverId": "2",
+      "title": "Baseball practice",
+      "passenger": "Richie",
+      "pickupLocation": "123 Main St, Springfield",
+      "dropoffLocation": "456 Elm St, Springfield",
+      "pickupTime": "2024-06-15T08:00:00Z",
+      "dropoffTime": "2024-06-15T08:30:00Z",
+      "status": "Scheduled",
+      "id": "1"
+    },
+    {
+      "driverId": "3",
+      "title": "Swimfest",
+      "passenger": "Molly",
+      "pickupLocation": "123 Main St, Springfield",
+      "dropoffLocation": "110 Nassau St, Springfield",
+      "pickupTime": "2024-07-22T08:00:00Z",
+      "dropoffTime": "2024-07-22T08:30:00Z",
+      "status": "Scheduled",
+      "id": "3"
+    },
+    {
+      "driverId": "1",
+      "title": "Vet visit",
+      "passenger": "Minnie",
+      "pickupLocation": "123 Main St, Springfield",
+      "dropoffLocation": "12 Animal Drive, Springfield",
+      "pickupTime": "2024-08-08T08:00:00Z",
+      "dropoffTime": "2024-08-08T08:30:00Z",
+      "status": "Scheduled",
+      "id": "4"
     }
-    ]
+  ]
 }

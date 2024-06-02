@@ -14,26 +14,12 @@ The documentation is organized as follows to enable you to dive right in and dis
 
 * [Overview](get-started/overview.md): will help you get oriented and assess the capabilities of the API.
 
-## Quickstart
-
-## Key concepts
-
-### Workflow/How it works
-
-### Authentication
-
-## Tutorials
-
-### How to #1
-
-### How to #2
-
 ## API reference
 
-The Chauffeur Tracker web service contains functionality for developers in the following resources:
+Reference documentation provides all the details about these resources:
 
-* [`family-members` resource](reference/family-members.md): use to retrieve, create, and update driver objects.
-* [`schedule` resource](reference/schedule.md): use to retrieve, create, and update driving schedule objects.
+* [`drivers` resource](reference/drivers.md): use to retrieve, create, and update driver objects.
+* [`schedules` resource](reference/schedules.md): use to retrieve, create, and update driving schedule objects.
 
 ### Status codes and errors
 
