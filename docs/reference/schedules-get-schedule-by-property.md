@@ -1,20 +1,24 @@
 ---
 layout: page
 ---
-# Retrieve schedules for a specific property
+# Retrieve schedules by property
 
 Returns an array of driving [`schedules`](schedules) objects for specified query parameters.
-Assumption: to return the correct schedule, you must know the property to query.
-For example, you might want to filter responses by 'title' to return a driver's "School run" or "Vet visit" schedules.
+
+For example, to return drivers who are scheduled to drive *Molly*, query the property `passenger` to filter responses.
+
+Assumption: to return the correct driver, you must know the property to query.
 
 ## URL
 
 ```shell
 
-{GET}{server_url}/schedules/
+{GET}{server_url}/schedules/?{property}={value}
 ```
 
 ## Query parameters
+
+Optionally, you can specify schedule properties as`Key/Value` query parameters. For example: `title/School run`. Note that property titles are case sensitive.
 
 | Property | Description | Type | Required | Notes |
 | -------------- | ------ | ------------ |------------ |------------ |
@@ -32,9 +36,17 @@ None
 
 None
 
+## Sample request
+
+The API call should look something like this. You can change the values of each property as you’d like.
+
+```bash
+{base_url}/schedules?passenger=Molly
+```
+
 ## Return body
 
-The following example shows a response that filters driving schedules with a named passenger.
+The sample response returns drivers' schedules matching the specified `passenger`.
 
 ```js
 [

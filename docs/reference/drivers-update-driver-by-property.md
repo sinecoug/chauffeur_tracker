@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Update a driver by a property
+# Update a driver by property
 
 Updates and replaces property instances in the [`drivers`](drivers) object.
 

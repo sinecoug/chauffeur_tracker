@@ -1,11 +1,12 @@
 ---
 layout: page
 ---
-# Retrieve drivers by a property
+# Retrieve drivers by property
 
 Returns an array of driving [`drivers`](drivers) objects matching a specified property.
 
-For example, to return a driver by cell phone number, query the property `cellPhone` to filter reponses.
+For example, to return a driver by cell phone number, query the property `cellPhone` to filter responses.
+
 Assumption: to return the correct driver, you must know the property to query.
 
 ## URL
@@ -22,7 +23,7 @@ Optionally, you can specify driver properties as`Key/Value` query parameters. Fo
 | Property | Description | Type | Required | Notes |
 | -------------- | ------ | ------------ |------------ |------------ |
 | `driverName` | The driver's full name. | string | Required |  |
-| `driverIdentity` | The driver's primary role in relationship to the family. | string | Optional |Examples: Mom, Dad, Neighbor  |
+| `driverIdentity` | The driver's primary role in relationship to the family. | string | Optional |Examples: Mom, Dad, Neighbor.  |
 | `cellPhone` | The driver's cell phone number. | string | Required |  |
 | `email` | The driver's email address. | string | Required | A unique email is required. |
 

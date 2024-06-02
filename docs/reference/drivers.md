@@ -55,4 +55,4 @@ The `drivers` resource supports these operations.
 
 ### DELETE
 
-* [Delete a specific driver](drivers-delete-schedule-by-id.md)
+* [Delete a specific driver](drivers-delete-driver-by-id.md)

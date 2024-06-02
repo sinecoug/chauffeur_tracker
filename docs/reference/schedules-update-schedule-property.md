@@ -4,16 +4,33 @@ layout: page
 
 # Update a schedule for a specific property
 
-Updates a driver's pick-up and drop-off [`schedules`](schedules).
-The request body contains the updated driving schedule details.
-You must specify the required properties for the user.
+Updates and replaces property instances in the [`schedules`](schedules) object.
+
+For example, you want to update properties of schedule *id=6* in the database.
+
+Assumption: to update the correct schedule, you must know the schedule `Id` to query.
+
+The request body contains the updated schedule details.
 
 ## URL
 
 ```shell
 
-{PATCH}{server_url}/schedules/
+{PATCH}{server_url}/schedules/{id}
 ```
+
+## Query parameters
+
+| Property | Description | Type | Required | Notes |
+| -------------- | ------ | ------------ |------------ |------------ |
+| `Id` | The record ID of the schedule to return.  | number | Required |  |
+
+---
+
+**NOTE:**
+To update/replace the [`schedules`](schedules) object in its entirety, use a {PUT} call in your [schedules request](schedules-update-schedule-by-id.md).
+
+---
 
 ## Request headers
 
@@ -58,9 +75,9 @@ The following example shows the response. Note that the names should be the same
 ```js
 [
     {
-        "id": "0f50",
+         "id": "0f50",
         "driverID": "5",
-        "title": "Birthday party",
+        "title": "Birthday party celebration",
         "passenger": "Johnny & Molly, Frankie and Jill",
         "pickupLocation": "123 Main St, Springfield",
         "dropoffLocation": "Omniplex, 112 Baker St, Springfield",

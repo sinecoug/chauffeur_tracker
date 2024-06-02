@@ -33,7 +33,7 @@ Sample `schedules` resource
 | Property | Description | Type | Required | Notes |
 | -------------- | ------ | ------------ |------------ |------------ |
 | `driverId` | The ID of the driver resource to which this schedule is assigned. | number | Required |  |
-| `title` | The title or short description of the driving schedule. | number | Required | Example: Vet visit, School drop-off |
+| `title` | The title or short description of the driving schedule. | number | Required | Example: Vet visit, School run. |
 |`passenger` | Who the driver is to transport. | string | Required |  |
 | `pickupLocation` | Where the driver is to pick up a passenger. | string | Required |  |
 | `dropoffLocation` | Where the driver is to drop off a passenger. | string | Required |  |

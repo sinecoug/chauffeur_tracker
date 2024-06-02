@@ -7,6 +7,7 @@ layout: page
 Updates a [`drivers`](drivers) object in the database.
 
 For example, you want to update properties of *driverId=4* in the database.
+
 Assumption: to update the correct driver, you must know the `driverId` to query.
 
 The request body contains the updated driver's details.

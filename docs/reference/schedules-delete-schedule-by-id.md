@@ -3,29 +3,23 @@ layout: page
 ---
 # Delete a schedule for a specific driver
 
-Deletes a specific driver's pick-up and drop-off schedule.
-Returns an array of driving [`schedules`](schedules) objects for the specified driverId.
-Assumption: to return the correct driver, you must know the driverId to query.
+Deletes a [`schedules`](schedules) object in the database.
+
+For example, you want to delete schedule *Id=6* from the database.
+Assumption: to delete the correct schedule, you must know the `Id` to query.
 
 ## URL
 
 ```shell
 
-{GET}{server_url}/schedules/
+{DELETE}{server_url}/schedules/{id}
 ```
 
 ## Query parameters
 
-Assumption: you must know the id parameter of the driver you want to retrieve.
-
 | Property | Description | Type | Required | Notes |
 | -------------- | ------ | ------------ |------------ |------------ |
-| `driverID` | The ID of the driver resource you want to retrieve. | number | Required |  |
-
----
-
-**NOTE:**
-To retrieve a driver's schedule by title or other property, further filter your [schedules request] properties.(schedules-get-schedule-by-filtered-property.md).
+| `Id` | The record ID of the schedule to return.  | number | Required |  |
 
 ## Request headers
 
@@ -37,12 +31,12 @@ None
 
 ## Return body
 
-The following example shows the response.
+The sample response returns a schedule matching the specified `id`, and deletes the object in the database.
 
 ```js
 [
    {
-        "id": "0f50",
+        "id": "6",
         "driverID": "5",
         "title": "Birthday party celebration",
         "passenger": "Johnny & Molly, Frankie and Jill",

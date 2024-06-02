@@ -6,6 +6,7 @@ layout: page
 Returns an array of driving [`drivers`](drivers) objects for the specified `driverId`, if it exists.
 
 For example, you want to retrieve *driverId=1* from the database.
+
 Assumption: to return the correct driver, you must know the `driverId` to query.
 
 ## URL

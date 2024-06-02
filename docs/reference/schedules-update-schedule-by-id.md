@@ -4,16 +4,33 @@ layout: page
 
 # Update a schedule for a specific driver
 
-Updates a driver's pick-up and drop-off [`schedules`](schedules).
-The request body contains the updated driving schedule details.
-You must specify the required properties for the user.
+Updates a driver's [`schedules`](schedules) object in the database.
+
+For example, you want to update properties of schedule *id=6* in the database.
+
+Assumption: to update the correct schedule, you must know the schedule `Id` to query.
+
+The request body contains the updated schedule details.
 
 ## URL
 
 ```shell
 
-{PUT}{server_url}/schedules/
+{PUT}{server_url}/schedules/{id}
 ```
+
+## Query parameters
+
+| Property | Description | Type | Required | Notes |
+| -------------- | ------ | ------------ |------------ |------------ |
+| `Id` | The record ID of the driving schedule to return.  | number | Required |  |
+
+---
+
+**NOTE:**
+{PUT} calls replace the [`schedules`](schedules) object. To update/replace single property instances in the [`schedules`](schedules) object, use a {PATCH} call in your [schedules request](schedules-update-schedule-by-property.md).
+
+---
 
 ## Request headers
 
@@ -46,9 +63,9 @@ The PUT body should look something like this. You can change the values of each 
 ```js
 [
       {
-        "id": "0f50",
+        "id": "6",
         "driverID": "5",
-        "title": "Birthday party",
+        "title": "'Cinema night'y",
         "passenger": "Johnny & Molly, Frankie and Jill",
         "pickupLocation": "123 Main St, Springfield",
         "dropoffLocation": "Omniplex, 112 Baker St, Springfield",
@@ -61,12 +78,12 @@ The PUT body should look something like this. You can change the values of each 
 
 ## Return body
 
-The following example shows the response. Note that the names should be the same as you used in your **Request body** and the response should include the new schedule id. The schedule id is automatically generated when the schedule is created.
+The following example shows the response. Note that the names should be the same as you used in your **Request body** and the response should include the updated schedule id. The schedule id is automatically generated when the schedule is created.
 
 ```js
 [
     {
-        "id": "0f50",
+        "id": "6",
         "driverID": "5",
         "title": "Birthday party",
         "passenger": "Johnny & Molly, Frankie and Jill",
