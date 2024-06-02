@@ -6,6 +6,7 @@ layout: page
 Deletes a [`drivers`](drivers) object in the database.
 
 For example, you want to delete *driverId=4* from the database.
+
 Assumption: to delete the correct driver, you must know the `driverId` to query.
 
 ## URL
@@ -19,7 +20,7 @@ Assumption: to delete the correct driver, you must know the `driverId` to query.
 
 | Property | Description | Type | Required | Notes |
 | -------------- | ------ | ------------ |------------ |------------ |
-| `driverID` | The record ID of the driver to return.  | number | Required |  |
+| `driverID` | The record ID of the driver to delete.  | number | Required |  |
 
 ## Request headers
 

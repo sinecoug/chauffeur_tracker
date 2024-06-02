@@ -3,7 +3,7 @@ layout: page
 ---
 # Retrieve drivers by property
 
-Returns an array of driving [`drivers`](drivers) objects matching a specified property.
+Returns an array of [`drivers`](drivers) objects matching a specified property.
 
 For example, to return a driver by cell phone number, query the property `cellPhone` to filter responses.
 
@@ -40,7 +40,7 @@ None
 The API call should look something like this. You can change the values of each property as you’d like.
 
 ```bash
-{base_url}/drivers?driverIdentity=Neighbor
+{GET}{base_url}/drivers?driverIdentity=Neighbor
 ```
 
 ## Return body

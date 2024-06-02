@@ -2,12 +2,11 @@
 layout: page
 ---
 
-# Update a schedule for a specific property
+# Update a schedule by property
 
 Updates and replaces property instances in the [`schedules`](schedules) object.
 
 For example, you want to update properties of schedule *id=6* in the database.
-
 Assumption: to update the correct schedule, you must know the schedule `Id` to query.
 
 The request body contains the updated schedule details.
@@ -58,12 +57,13 @@ In the request body, specify a JSON representation of the [`schedule`](schedules
 
 ## Sample request
 
-The PUT body should look something like this. You can change the values of each property as you’d like.
+The PATCH body should look something like this. You can change the values of each property as you’d like.
 
 ```js
 [
     {
         "title": "Birthday party celebration"
+        "status": "Unscheduled"
     }
 ]
 ```

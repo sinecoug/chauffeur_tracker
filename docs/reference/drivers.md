@@ -29,7 +29,7 @@ Sample `drivers` resource
 | Property | Description | Type | Required | Notes |
 | -------------- | ------ | ------------ |------------ |------------ |
 | `driverName` | The driver's full name. | string | Required |  |
-| `driverIdentity` | The driver's primary role in relationship to the family. | string | Optional |Examples: Mom, Dad, Neighbor  |
+| `driverIdentity` | The driver's primary role in relationship to the family. | string | Optional |Examples: Mom, Dad, Neighbor.  |
 | `cellPhone` | The driver's cell phone number. | string | Required |  |
 | `email` | The driver's email address. | string | Required | A unique email is required. |
 | `id` | The driver's unique record ID. | number | Required |  |
@@ -50,8 +50,8 @@ The `drivers` resource supports these operations.
 
 ### UPDATE (PUT/PATCH)
 
-* [Update a driver](drivers-update-schedule-by-id.md)
-* [Update a driver by property](drivers-update-schedule-by-property.md)
+* [Update a driver](drivers-update-driver-by-id.md)
+* [Update a driver by property](drivers-update-driver-by-property.md)
 
 ### DELETE
 

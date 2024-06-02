@@ -6,6 +6,7 @@ layout: page
 Deletes a [`schedules`](schedules) object in the database.
 
 For example, you want to delete schedule *Id=6* from the database.
+
 Assumption: to delete the correct schedule, you must know the `Id` to query.
 
 ## URL

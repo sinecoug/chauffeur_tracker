@@ -3,7 +3,7 @@ layout: page
 ---
 # Retrieve all drivers
 
-Returns an array of driving [`drivers`](drivers) objects who are registered with the service.
+Returns an array of [`drivers`](drivers) objects who are registered with the service.
 
 ## URL
 

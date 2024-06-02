@@ -7,7 +7,6 @@ layout: page
 Updates a driver's [`schedules`](schedules) object in the database.
 
 For example, you want to update properties of schedule *id=6* in the database.
-
 Assumption: to update the correct schedule, you must know the schedule `Id` to query.
 
 The request body contains the updated schedule details.
@@ -23,7 +22,7 @@ The request body contains the updated schedule details.
 
 | Property | Description | Type | Required | Notes |
 | -------------- | ------ | ------------ |------------ |------------ |
-| `Id` | The record ID of the driving schedule to return.  | number | Required |  |
+| `Id` | The record ID of the schedule to return.  | number | Required |  |
 
 ---
 
@@ -65,8 +64,8 @@ The PUT body should look something like this. You can change the values of each 
       {
         "id": "6",
         "driverID": "5",
-        "title": "'Cinema night'y",
-        "passenger": "Johnny & Molly, Frankie and Jill",
+        "title": "'Birthday party",
+        "passenger": "Johnny & Molly, Frankie & Jill",
         "pickupLocation": "123 Main St, Springfield",
         "dropoffLocation": "Omniplex, 112 Baker St, Springfield",
         "pickupTime": "2024-07-09T19:30:00Z",

@@ -50,7 +50,7 @@ The `schedules` resource supports these operations.
 
 * [Retrieve all schedules](schedules-get-all-schedules.md)
 * [Retrieve schedules for a specific driver](schedules-get-schedule-by-id.md)
-* [Retrieve schedules by property](schedules-get-schedule-by-filtered-property.md)
+* [Retrieve schedules by property](schedules-get-schedule-by-property.md)
 
 ### CREATE (POST)
 
@@ -59,7 +59,7 @@ The `schedules` resource supports these operations.
 ### UPDATE (PUT/PATCH)
 
 * [Update a schedule for a specific driver](schedules-update-schedule-by-id.md)
-* [Update a schedule by property](schedules-update-schedule-property.md)
+* [Update a schedule by property](schedules-update-schedule-by-property.md)
 
 ### DELETE
 

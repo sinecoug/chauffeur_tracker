@@ -3,7 +3,7 @@ layout: page
 ---
 # Retrieve schedules for a specific driver
 
-Returns an array of driving [`schedules`](schedules) objects for the specified `driverId`, if it exists.
+Returns an array of [`schedules`](schedules) objects for a specified `driverId`, if it exists.
 
 For example, you want to retrieve the driving schedule of *driverId=1* from the database.
 
@@ -25,7 +25,7 @@ Assumption: to return the correct driver's pick-up and drop-off schedule, you mu
 ---
 
 **NOTE:**
-To retrieve a driver's schedule by title or other property, further filter your [schedules request](drivers-get-schedule-by-property.md).
+To retrieve a driver's schedule by title or other property, further filter your [schedules request](schedules-get-schedule-by-property.md).
 
 ---
 

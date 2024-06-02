@@ -3,7 +3,7 @@ layout: page
 ---
 # Retrieve all schedules
 
-Returns an array of driving [`schedules`](schedules) objects for all [`drivers`](drivers) who are registered with the service.
+Returns an array of [`schedules`](schedules) objects for all [`drivers`](drivers) who are registered with the service.
 
 ## URL
 
