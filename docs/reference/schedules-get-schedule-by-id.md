@@ -72,3 +72,7 @@ None
 | ------------- | ----------- | ----------- |
 | 200 | Success | Requested data returned successfully |
 |  ECONNREFUSED | N/A | Service is offline. Start the service and try again. |
+
+## Related information
+
+* [Tutorial: Retrieve a driver's schedule](../tutorials/how-to-get-a-drivers-schedule.md)

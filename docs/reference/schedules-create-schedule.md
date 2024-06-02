@@ -37,7 +37,7 @@ In the request body, specify a JSON representation of the [`schedule`](schedules
 | `dropoffLocation` | Where the driver is to drop off a passenger. | string | Required |  |
 | `pickupTime` | When the driver is to pick up a passenger. | date-time | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time. |
 | `dropoffTime` | When the driver is to drop off a passenger. | date-time | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time. |
-| `status` | The status of the driving schedule. | string | Required |  |
+| `status` | The status of the driving schedule. | string | Required | Allowed status values are *Scheduled*, *Canceled*, *Rescheduled*. |
 | `id` | The driving schedule's unique record ID. | number | Required | The schedule id is auto-generated. See the return body. |
 
 ## Sample request
@@ -89,4 +89,4 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Handling errors](handling-errors.md)
+* [Tutorial: Create a driver's schedule](../tutorials/how-to-create-a-driver-schedule.md)

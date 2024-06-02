@@ -7,7 +7,7 @@ Returns an array of driving [`schedules`](schedules) objects for specified query
 
 For example, to return drivers who are scheduled to drive *Molly*, query the property `passenger` to filter responses.
 
-Assumption: to return the correct driver, you must know the property to query.
+Assumption: to return the correct schedule, you must know the property to query.
 
 ## URL
 
@@ -26,7 +26,7 @@ Optionally, you can specify schedule properties as`Key/Value` query parameters. 
 |`passenger` | Who the driver is to transport. | string | Optional |  |
 | `pickupLocation` | Where the driver is to pick up a passenger. | string | Optional |  |
 | `dropoffLocation` | Where the driver is to drop off a passenger. | string | Optional |  |
-| `status` | The status of the driving schedule. | string | Optional |  |
+| `status` | The status of the driving schedule. | string | Optional |Allowed status values are *Scheduled*, *Canceled*, *Rescheduled*. |
 
 ## Request headers
 

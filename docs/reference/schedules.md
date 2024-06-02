@@ -39,7 +39,7 @@ Sample `schedules` resource
 | `dropoffLocation` | Where the driver is to drop off a passenger. | string | Required |  |
 | `pickupTime` | When the driver is to pick up a passenger. | date-time | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time. |
 | `dropoffTime` | When the driver is to drop off a passenger. | date-time | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time. |
-| `status` | The status of the driving schedule. | string | Required |  |
+| `status` | The status of the driving schedule. | string | Required |Allowed status values are *Scheduled*, *Canceled*, *Rescheduled*. |
 | `id` | The driving schedule's unique record ID. | number | Required |  |
 
 ## Operations
