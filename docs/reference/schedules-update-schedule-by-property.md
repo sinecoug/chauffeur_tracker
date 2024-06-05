@@ -24,13 +24,6 @@ The request body contains the updated schedule details.
 | -------------- | ------ | ------------ |------------ |------------ |
 | `Id` | The record ID of the schedule to return.  | number | Required |  |
 
----
-
-**NOTE:**
-To update/replace the [`schedules`](schedules) object in its entirety, use a {PUT} call in your [schedules request](schedules-update-schedule-by-id.md).
-
----
-
 ## Request headers
 
 This request does not use any authorization. The endpoint is available to all users and applications.
@@ -42,7 +35,18 @@ This request does not use any authorization. The endpoint is available to all us
 
 ## Request body
 
-In the request body, specify a JSON representation of the [`schedule`](schedules) object. The following table lists the properties that are required when you create a schedule.
+In the request body, specify a JSON representation of the [`schedules`](schedules) object.
+
+---
+
+**IMPORTANT:**
+With a {PATCH} call, the request body replaces specified properties of the [`schedules`](schedules) object.
+
+To update/replace all the properties in the [`schedules`](schedules) object, use a {PUT} call in your [schedules request](schedules-update-schedule-by-id.md).
+
+---
+
+The following table lists the properties that you can update.
 
 | Property | Description | Type | Required | Notes |
 | -------------- | ------ | ------------ |------------ |------------ |
@@ -52,7 +56,7 @@ In the request body, specify a JSON representation of the [`schedule`](schedules
 | `dropoffLocation` | Where the driver is to drop off a passenger. | string | Required |  |
 | `pickupTime` | When the driver is to collect a passenger. | date-time | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time. |
 | `dropoffTime` | When the driver is to drop off a passenger. | date-time | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time. |
-| `status` | The status of the driving schedule. | string | Required |  |
+| `status` | The status of the driving schedule. | string | Required |Allowed status values are *Scheduled*, *Canceled*, *Rescheduled*. |
 | `id` | The driving schedule's unique record ID.  | number | Required |  |
 
 ## Sample request
@@ -70,7 +74,7 @@ The PATCH body should look something like this. You can change the values of eac
 
 ## Return body
 
-The following example shows the response. Note that the names should be the same as you used in your **Request body** and the response should include the new schedule id. The schedule id is automatically generated when the schedule is created.
+The following example shows the response. Note that the names should be the same as you used in your **Request body** and the response should include the schedule id. The schedule id is automatically generated when the schedule is created.
 
 ```js
 [
@@ -98,4 +102,4 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Handling errors](handling-errors.md)
+* [Tutorial: Change the status (property) of a driver's schedule](../tutorials/how-to-change-a-driver-schedule.md)

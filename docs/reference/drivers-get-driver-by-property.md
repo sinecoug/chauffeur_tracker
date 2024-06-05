@@ -66,3 +66,7 @@ The sample response returns a driver matching the specified `driverIdentity`.
 | ------------- | ----------- | ----------- |
 | 200 | Success | Requested data returned successfully |
 |  ECONNREFUSED | N/A | Service is offline. Start the service and try again. |
+
+## Related information
+
+* [Tutorial: Retrieve a driver's cell phone number](../tutorials/how-to-get-a-driver-by-property.md)

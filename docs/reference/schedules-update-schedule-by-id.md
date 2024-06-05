@@ -6,7 +6,8 @@ layout: page
 
 Updates a driver's [`schedules`](schedules) object in the database.
 
-For example, you want to update properties of schedule *id=6* in the database.
+For example, you want to update properties associated with schedule *id=6* in the database.
+
 Assumption: to update the correct schedule, you must know the schedule `Id` to query.
 
 The request body contains the updated schedule details.
@@ -24,13 +25,6 @@ The request body contains the updated schedule details.
 | -------------- | ------ | ------------ |------------ |------------ |
 | `Id` | The record ID of the schedule to return.  | number | Required |  |
 
----
-
-**NOTE:**
-{PUT} calls replace the [`schedules`](schedules) object. To update/replace single property instances in the [`schedules`](schedules) object, use a {PATCH} call in your [schedules request](schedules-update-schedule-by-property.md).
-
----
-
 ## Request headers
 
 This request does not use any authorization. The endpoint is available to all users and applications.
@@ -44,6 +38,15 @@ This request does not use any authorization. The endpoint is available to all us
 
 In the request body, specify a JSON representation of the [`schedule`](schedules) object. The following table lists the properties that are required when you create a schedule.
 
+---
+
+**IMPORTANT:**
+With a {PUT} call, the request body replaces the current properties of the [`schedules`](schedules) object.
+
+To update/replace single property instances in the [`schedules`](schedules) object, use a {PATCH} call in your [schedules request](schedules-update-schedule-by-property.md).
+
+---
+
 | Property | Description | Type | Required | Notes |
 | -------------- | ------ | ------------ |------------ |------------ |
 | `driverID` | The ID of the driver resource to which this schedule is assigned. | number | Required |  |
@@ -52,7 +55,7 @@ In the request body, specify a JSON representation of the [`schedule`](schedules
 | `dropoffLocation` | Where the driver is to drop off a passenger. | string | Required |  |
 | `pickupTime` | When the driver is to collect a passenger. | date-time | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time. |
 | `dropoffTime` | When the driver is to drop off a passenger. | date-time | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time. |
-| `status` | The status of the driving schedule. | string | Required |  |
+| `status` | The status of the driving schedule. | string | Required |Allowed status values are *Scheduled*, *Canceled*, *Rescheduled*. |
 | `id` | The driving schedule's unique record ID.  | number | Required |  |
 
 ## Sample request
@@ -77,7 +80,7 @@ The PUT body should look something like this. You can change the values of each 
 
 ## Return body
 
-The following example shows the response. Note that the names should be the same as you used in your **Request body** and the response should include the updated schedule id. The schedule id is automatically generated when the schedule is created.
+The following example shows the response. Note that the names should be the same as you used in your **Request body** and the response should include the schedule id. The schedule id is automatically generated when the schedule is created.
 
 ```js
 [

@@ -6,7 +6,8 @@ layout: page
 
 Updates and replaces property instances in the [`drivers`](drivers) object.
 
-For example, you want to update a single property of *driverId=4* in the database.
+For example, you want to update a single property associated with *driverId=4* in the database.
+
 Assumption: to update the correct driver, you must know the `driverId` to query.
 
 The request body contains the updated driver's details.
@@ -24,13 +25,6 @@ The request body contains the updated driver's details.
 | -------------- | ------ | ------------ |------------ |------------ |
 | `driverId` | The record ID of the driver to return.  | number | Required |  |
 
----
-
-**NOTE:**
-To update/replace the [`drivers`](drivers) object in its entirety, use a {PUT} call in your [drivers request](drivers-update-driver-by-id.md).
-
----
-
 ## Request headers
 
 This request does not use any authorization. The endpoint is available to all users and applications.
@@ -42,19 +36,30 @@ This request does not use any authorization. The endpoint is available to all us
 
 ## Request body
 
-In the request body, specify a JSON representation of the [`drivers`](drivers) object. The following table lists the properties that are required when you create a driver object.
+In the request body, specify a JSON representation of the [`drivers`](drivers) object.
+
+---
+
+**IMPORTANT:**
+With a {PATCH} call, the request body replaces specified properties of the [`drivers`](drivers) object.
+
+To update/replace all the properties in the [`drivers`](drivers) object, use a {PUT} call in your [drivers request](drivers-update-driver-by-id.md).
+
+---
+
+The following table lists the properties that you can update.
 
 | Property | Description | Type | Required | Notes |
 | -------------- | ------ | ------------ |------------ |------------ |
 | `driverName` | The driver's full name. | string | Required |  |
 | `driverIdentity` | The driver's primary role in relationship to the family. | string | Optional |Examples: Mom, Dad, Neighbor.  |
-| `cellPhone` | The driver's cell phone number. | string | Required |  |
+| `cellPhone` | The driver's cell phone number. | string | Required |The standard US telephone number is a 10-digit number, such as (555) 555-1234, where the first three digits are the 'area code'.  |
 | `email` | The driver's email address. | string | Required | A unique email is required. |
 | `id` | The driver's unique record ID. | number | Required | The driver's id is auto-generated. See the return body. |
 
 ## Sample request
 
-The PUT body should look something like this. You can change the values of each property as you’d like.
+The PATCH body should look something like this. You can change the values of each property as you’d like.
 
 ```js
 [
@@ -67,7 +72,7 @@ The PUT body should look something like this. You can change the values of each 
 
 ## Return body
 
-The following example shows the response. Note that the names should be the same as you used in your **Request body** and the response should include the udpated driver's id. The driver's id is automatically generated when the schedule is created.
+The following example shows the response. Note that the names should be the same as you used in your **Request body** and the response should include the driver's id. The driver's id is automatically generated when the schedule is created.
 
 ```js
 [
@@ -91,4 +96,4 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Handling errors](handling-errors.md)
+* [Tutorial: Change the status (property) of a driver's schedule](how-to-change-a-driver-schedule.md)

@@ -30,7 +30,7 @@ Sample `drivers` resource
 | -------------- | ------ | ------------ |------------ |------------ |
 | `driverName` | The driver's full name. | string | Required |  |
 | `driverIdentity` | The driver's primary role in relationship to the family. | string | Optional |Examples: Mom, Dad, Neighbor.  |
-| `cellPhone` | The driver's cell phone number. | string | Required |  |
+| `cellPhone` | The driver's cell phone number. | string | Required |The standard US telephone number is a 10-digit number, such as (555) 555-1234, where the first three digits are the 'area code'.  |
 | `email` | The driver's email address. | string | Required | A unique email is required. |
 | `id` | The driver's unique record ID. | number | Required |  |
 

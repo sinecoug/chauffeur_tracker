@@ -14,6 +14,18 @@ The documentation is organized as follows to enable you to dive right in and dis
 
 * [Overview](get-started/overview.md): will help you get oriented and assess the capabilities of the API.
 
+## Tutorials
+
+Tutorials teach you how to do common tasks with the API.
+
+Learn how to:
+
+* [Enroll a driver in the service](tutorials/how-to-enroll-a-driver.md)
+* [Create a new schedule for an enrolled driver](tutorials/how-to-create-a-driver-schedule.md)
+* [Change the status of a driving appointment](tutorials/how-to-change-a-driver-schedule-property.md)
+* [Retrieve a driver's *scheduled* commitments](tutorials/how-to-get-a-drivers-schedule.md)
+* [Retrieve a driver's cell phone number for emergency calls](tutorials/how-to-get-a-driver-by-property.md)
+
 ## API reference
 
 Reference documentation provides all the details about these resources:

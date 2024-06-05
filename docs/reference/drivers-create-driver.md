@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Create a driver
+# Create a driver object
 
 Creates a [`drivers`](drivers) object in the database.
 The request body contains the new driver's details.
@@ -32,7 +32,7 @@ In the request body, specify a JSON representation of the [`drivers`](drivers) o
 | -------------- | ------ | ------------ |------------ |------------ |
 | `driverName` | The driver's full name. | string | Required |  |
 | `driverIdentity` | The driver's primary role in relationship to the family. | string | Optional |Examples: Mom, Dad, Neighbor.  |
-| `cellPhone` | The driver's cell phone number. | string | Required |  |
+| `cellPhone` | The driver's cell phone number. | string | Required |The standard US telephone number is a 10-digit number, such as (555) 555-1234, where the first three digits are the 'area code'.  |
 | `email` | The driver's email address. | string | Required | A unique email is required. |
 | `id` | The driver's unique record ID. | number | Required | The schedule id is auto-generated. See the return body. |
 
@@ -78,4 +78,4 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Handling errors](handling-errors.md)
+* [Tutorial: Enroll a new driver](../tutorials/how-to-enroll-a-driver.md)
