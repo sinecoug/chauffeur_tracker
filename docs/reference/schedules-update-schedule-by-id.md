@@ -27,10 +27,9 @@ The request body contains the updated schedule details.
 
 ## Request headers
 
-This request does not use any authorization. The endpoint is available to all users and applications.
-
 | Header name | Description | Required | Values |
 | -------------- | ------ | ------------ |------------ |
+| Basic Auth | A security checkpoint that requires transmission of a username and password with every request. | Required | Basic authentication is a simple authentication scheme that's built into the HTTP protocol. See the Quickstart > Security section.|
 | Content-Type | The format of the data to be posted. | Optional | application/json. Default value.  |
 | Accept | The format of the data to be returned. | Optional | application/json. Default value. |
 
@@ -108,4 +107,4 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Handling errors](handling-errors.md)
+* [Quickstart guide > Security](../get-started/quickstart.md)

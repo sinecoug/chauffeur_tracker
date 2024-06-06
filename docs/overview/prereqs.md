@@ -2,10 +2,9 @@
 layout: page
 ---
 
-# Before you  start a tutorial
+# System requirements
 
-These are the steps you must do before you can run
-the tutorials for the **Chauffeur Tracker service**.
+These are the steps you must do before you can run the tutorials for the **Chauffeur Tracker service**.
 
 Expect this preparation to take about 20 minutes to complete.
 
@@ -35,7 +34,7 @@ long-term support (LTS version of the operating system).
 
 To test your development system, follow these steps:
 
-1. Create and checkout a test branch of your fork of the To-Do-service repo. Your `GitHub repo workspace` is the directory that contains your fork of the `to-do-service` repo.
+1. Create and checkout a test branch of your fork of the To-Do-service repo. Your `GitHub repo workspace` is the directory that contains your fork of the `chauffeur-tracker` repo.
 
     ```shell
     cd <your GitHub repo workspace>
@@ -52,11 +51,12 @@ To test your development system, follow these steps:
 
 2. Make a test call to the service.
 
-    ```shell
-    curl http://localhost:3000/users
+    ```bash
+
+        curl -u user:pass http://localhost:3000/drivers
     ```
 
-3. If the service is running correctly, you should see a list of users from the service, such as in this example.
+3. If the service is running correctly, you should see a list of drivers from the service, such as in this example.
 
     ```js
     [
@@ -88,3 +88,7 @@ Some common situations that cause errors include:
 
 If you see the list of users from the service, you're ready to do
 the tutorials.
+
+## Related information
+
+* [Quickstart guide](../get-started/quickstart.md)

@@ -29,7 +29,9 @@ Optionally, you can specify driver properties as`Key/Value` query parameters. Fo
 
 ## Request headers
 
-None
+| Header name | Description | Required | Values |
+| -------------- | ------ | ------------ |------------ |
+| Basic Auth | A security checkpoint that requires transmission of a username and password with every request. | Required | Basic authentication is a simple authentication scheme that's built into the HTTP protocol. See the Quickstart > Security section.|
 
 ## Request body
 
@@ -70,3 +72,4 @@ The sample response returns a driver matching the specified `driverIdentity`.
 ## Related information
 
 * [Tutorial: Retrieve a driver's cell phone number](../tutorials/how-to-get-a-driver-by-property.md)
+* [Quickstart guide > Security](../get-started/quickstart.md)

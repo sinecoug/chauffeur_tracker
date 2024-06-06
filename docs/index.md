@@ -12,7 +12,13 @@ The documentation is organized as follows to enable you to dive right in and dis
 
 ## Overview
 
-* [Overview](get-started/overview.md): will help you get oriented and assess the capabilities of the API.
+* [Overview](overview/overview.md): helps you get oriented and assess the capabilities of the API.
+* [System Requirements](overview/prereqs.md): sets you up to use the API in your local development environment.
+* [Workflow](overview/workflow.md): clarifies key concepts to enrich your understanding of the API.  
+
+## Get started
+
+* [Quickstart guide](get-started/quickstart.md): leads you through making a simple first call to the API.
 
 ## Tutorials
 
@@ -34,6 +40,8 @@ Reference documentation provides all the details about these resources:
 * [`schedules` resource](reference/schedules.md): use to retrieve, create, and update driving schedule objects.
 
 ### Status codes and errors
+
+* [Error handling information](overview/error-handling.md): gets you out of a bind if an error occurs.
 
 ## Support
 
