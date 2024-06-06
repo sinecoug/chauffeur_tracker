@@ -31,7 +31,9 @@ To retrieve a driver's schedule by title or other property, further filter your 
 
 ## Request headers
 
-None
+| Header name | Description | Required | Values |
+| -------------- | ------ | ------------ |------------ |
+| Basic Auth | A security checkpoint that requires transmission of a username and password with every request. | Required | Basic authentication is a simple authentication scheme that's built into the HTTP protocol. See the Quickstart > Security section.|
 
 ## Request body
 
@@ -76,3 +78,4 @@ None
 ## Related information
 
 * [Tutorial: Retrieve a driver's schedule](../tutorials/how-to-get-a-drivers-schedule.md)
+* [Quickstart guide > Security](../get-started/quickstart.md)

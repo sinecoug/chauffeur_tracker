@@ -10,61 +10,36 @@ Easily manage all your pick-up and drop-off schedules in the Chauffeur Tracker!
 
 ## At a glance
 
-This Quickstart provides all the information you need to begin using Chauffeur Tracker to track your driving schedules.
+This Quickstart provides all the information you need to begin using Chauffeur Tracker to track your family's driving schedules.
 
-You’ll learn when and how to use the web service and get set up to make your first call to the API.
+You’ll learn about hosting a secure web service and how to make your first call to the API.
 
-## Setting up the Chauffeur Tracker service
+## Base URL
 
-Driving schedules will surface in the Chauffeur Tracker service when they are created in the database and assigned to drivers (by driver {id}). If you’ve used the Chauffeur Tracker service previously, you’re already enrolled in the service and may have schedules to work with.
+The Chauffeur Tracker API is served over HTTPS. All URLs referenced in the documentation have the following base: https://{server_url}The {server_url} variable depends on users' installation of the service in their development environment. For v1 of Chauffeur Tracker service, the {server_url} variable is typically set to <http://localhost:3000>.
 
-If not, you might need to set up your development system and get going from scratch. Don’t worry – you only have to do this one time per development system! Follow these [prerequisite steps](../overview/prereqs.md) to install the tools and test your development system.
+## Security
 
-## When to use the Chauffeur Tracker service
+At its heart, API security requires that the caller provides:
 
-The Chauffeur Tracker service REST API offers a wide range of integration possibilities, from enhancing a family's driving workflow to creating customer-facing apps.
+- an authenticated identity (the *authentication*), and
+- evidence that the caller has permission to access the resources (the *authorization*)
 
-The service comprises two resources: [`drivers`](drivers) and [`schedules`](schedules). The [`drivers`](drivers) resource (containing the subscribed drivers to the service) works in synergy with the [`schedules`](schedules) resource (containing the schedules) to align drivers with their driving schedules.
+The Chauffeur Tracker service is an imaginary, *simulated* service. While it doesn't follow all real-world API access and restriction rules, the service does implement HTTP Basic Auth, which is a classic lock-and-key security model that's simple and widely used. Basic Auth requires a username and password combination that's Base64 encoded and sent in the HTTP Authorization header of a request.
 
-Using this cloud-based service, customers (family members) can register themselves to create and manage their own driving schedules.
-When they're registered, customers can update and delete schedules to suit their needs. Adding schedules on customers' behalf is easy - if, for exmample, an organization is collaborating with drivers on different teams and projects, they might be delegated on-demand driving requests and assigned schedules from different sources.
+In HTTP Basic Auth, the server-side application expects an Authorization header that contains a username and a password.
 
-## How to use the Chauffeur Tracker service
-
-To build your API call, you must have the following components:
-
-* **A host.**  The {base_url} depends on users' installation of the service in their development environment. For v1 of Chauffeur Tracker Service API, the **base_url** variable is typically set to `http://localhost:3000`.
-* **Authorization.**  For v1 of the Chauffeur Tracker service, requests do not use any authorization. All endpoints are available to all users and applications.
-* **A request.**  The Chauffeur Tracker service REST API enables CRUD operations via HTTP requests on database resources (`GET`, `POST`, `PUT`, `PATCH`, and `DELETE` methods). Request and response bodies are encoded as JSON.
-
-### Supported endpoints
-
-| HTTP Method | Endpoint |
-| :--------------: | :--------------: |
-| GET | [Retrieve all drivers](../reference/drivers-get-all-drivers.md) |
-| GET | [Retrieve a specific driver by ID](../reference/drivers-get-driver-by-id) |
-| GET | [Retrieve a driver by property](../reference/drivers-get-driver-by-property) |
-| POST | [Create a driver object](../reference/drivers-create-driver.md) |
-| PUT | [Update a driver by ID](../reference/drivers-update-driver-by-id.md) |
-| PATCH | [Update a driver by property](../reference/drivers-update-driver-by-property.md) |
-| DELETE | [Delete a driver by ID](../reference/drivers-delete-driver-by-id.md) |
-| GET | [Retrieve all driving schedules](../reference/schedules-get-all-schedules.md) |
-| GET | [Retrieve a specific schedule by ID](../reference/schedules-get-schedule-by-id) |
-| GET | [Retrieve a schedule by property](../reference/schedules-get-schedule-by-property) |
-| POST | [Create a schedule](../reference/schedules-create-schedule.md) |
-| PUT | [Update a schedule by ID](../reference/schedules-update-schedule-by-id.md) |
-| PATCH | [Update a schedule by property](../reference/schedules-update-schedule-by-property.md) |
-| DELETE | [Delete a schedule by ID](../reference/schedules-delete-schedule-by-id.md) |
+If it doesn't receive it, it returns an HTTP 401 "Unauthorized" error.
 
 ## Make your first API call – *List all driving schedules*
 
 Assume that you’re already enrolled in the Chauffeur Tracker service and you want to list all driving schedules as a first call to the API.
 
-Let’s test making this simple request to the [`schedules`](schedules) resource.  You’ll use cURL to make the API call.
+Let’s test making this simple request to the [`schedules`](schedules) resource.  You’ll use cURL to make the API call, and for Basic Auth, include the -u parameter to pass the username and password and return the response without errors.
 
 ```bash
 
-curl http://localhost:3000/schedules
+curl -u user:pass http://localhost:3000/schedules
 ```
 
 If the call was successful, the response you receive will be a list of schedules from the Chauffeur Tracker service such as you see in this example:

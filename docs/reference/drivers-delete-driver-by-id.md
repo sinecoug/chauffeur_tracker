@@ -24,7 +24,9 @@ Assumption: to delete the correct driver, you must know the `driverId` to query.
 
 ## Request headers
 
-None
+| Header name | Description | Required | Values |
+| -------------- | ------ | ------------ |------------ |
+| Basic Auth | A security checkpoint that requires transmission of a username and password with every request. | Required | Basic authentication is a simple authentication scheme that's built into the HTTP protocol. See the Quickstart > Security section.|
 
 ## Request body
 
@@ -53,3 +55,7 @@ The sample response returns a driver matching the specified `id`, and deletes th
 | ------------- | ----------- | ----------- |
 | 200 | Success | Requested data returned successfully |
 |  ECONNREFUSED | N/A | Service is offline. Start the service and try again. |
+
+## Related information
+
+* [Quickstart guide > Security](../get-started/quickstart.md)
