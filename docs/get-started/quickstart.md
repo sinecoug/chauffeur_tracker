@@ -49,14 +49,14 @@ To build your API call, you must have the following components:
 | PATCH | [Update a driver by property](../reference/drivers-update-driver-by-property.md) |
 | DELETE | [Delete a driver by ID](../reference/drivers-delete-driver-by-id.md) |
 | GET | [Retrieve all driving schedules](../reference/schedules-get-all-schedules.md) |
-| GET | [Retrieve a specific driver by ID](../reference/schedules-get-schedule-by-id) |
-| GET | [Retrieve a driver by property](../reference/schedules-get-schedule-by-property) |
-| POST | [Create a driver object](../reference/schedules-create-schedule.md) |
-| PUT | [Update a driver by ID](../reference/schedules-update-schedule-by-id.md) |
-| PATCH | [Update a driver by property](../reference/schedules-update-schedule-by-property.md) |
-| DELETE | [Delete a driver by ID](../reference/schedules-delete-schedule-by-id.md) |
+| GET | [Retrieve a specific schedule by ID](../reference/schedules-get-schedule-by-id) |
+| GET | [Retrieve a schedule by property](../reference/schedules-get-schedule-by-property) |
+| POST | [Create a schedule](../reference/schedules-create-schedule.md) |
+| PUT | [Update a schedule by ID](../reference/schedules-update-schedule-by-id.md) |
+| PATCH | [Update a schedule by property](../reference/schedules-update-schedule-by-property.md) |
+| DELETE | [Delete a schedule by ID](../reference/schedules-delete-schedule-by-id.md) |
 
-## Make your first API call – *List all tasks*
+## Make your first API call – *List all driving schedules*
 
 Assume that you’re already enrolled in the Chauffeur Tracker service and you want to list all driving schedules as a first call to the API.
 
