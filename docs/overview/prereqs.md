@@ -4,8 +4,7 @@ layout: page
 
 # System requirements
 
-These are the steps you must do before you can run
-the tutorials for the **Chauffeur Tracker service**.
+These are the steps you must do before you can run the tutorials for the **Chauffeur Tracker service**.
 
 Expect this preparation to take about 20 minutes to complete.
 
@@ -52,8 +51,9 @@ To test your development system, follow these steps:
 
 2. Make a test call to the service.
 
-    ```shell
-    curl http://localhost:3000/drivers
+    ```bash
+
+        curl -u user:pass http://localhost:3000/drivers
     ```
 
 3. If the service is running correctly, you should see a list of users from the service, such as in this example.
