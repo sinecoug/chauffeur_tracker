@@ -2,9 +2,9 @@
 layout: page
 ---
 
-# Workflow
+# Chauffeur Tracker workflows
 
-The key concepts outlined below 
+The key concepts that follow tell you how the Chaffeur Tracker service works under the hood. You'll learn when and how to use the web service and the supported endpoints.
 
 ## The Chauffeur Tracker service
 
@@ -47,7 +47,6 @@ To build your API call, you must have the following components:
 | PUT | [Update a schedule by ID](../reference/schedules-update-schedule-by-id.md) |
 | PATCH | [Update a schedule by property](../reference/schedules-update-schedule-by-property.md) |
 | DELETE | [Delete a schedule by ID](../reference/schedules-delete-schedule-by-id.md) |
-
 
 ## Related information
 
