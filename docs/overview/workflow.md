@@ -4,7 +4,7 @@ layout: page
 
 # Chauffeur Tracker workflows
 
-The following key concepts reveals how the Chaffeur Tracker service works under the hood. You'll learn when and how to use the web service and the supported endpoints.
+The following key concepts reveal how the Chaffeur Tracker service works under the hood.
 
 ## The Chauffeur Tracker service
 
