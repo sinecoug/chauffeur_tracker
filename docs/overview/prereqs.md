@@ -91,4 +91,4 @@ the tutorials.
 
 ## Related information
 
-* [Quickstart guide](quickstart.md)
+* [Quickstart guide](../get-started/quickstart.md)
