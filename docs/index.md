@@ -41,6 +41,8 @@ Reference documentation provides all the details about these resources:
 
 ### Status codes and errors
 
+* [Error handling information](overview/error-handling.md): gets you out of a bind if an error occurs.
+
 ## Support
 
 If you have any questions or run into any issues while using the Chauffeur Tracker API, we're here to help!
