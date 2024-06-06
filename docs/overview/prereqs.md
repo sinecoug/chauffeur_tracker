@@ -56,7 +56,7 @@ To test your development system, follow these steps:
         curl -u user:pass http://localhost:3000/drivers
     ```
 
-3. If the service is running correctly, you should see a list of users from the service, such as in this example.
+3. If the service is running correctly, you should see a list of drivers from the service, such as in this example.
 
     ```js
     [
