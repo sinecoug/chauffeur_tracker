@@ -13,6 +13,12 @@ The documentation is organized as follows to enable you to dive right in and dis
 ## Overview
 
 * [Overview](get-started/overview.md): will help you get oriented and assess the capabilities of the API.
+* [Requirements](get-started/prereqs.md):
+* [Workflow](get-started/workflow.md):
+
+## Get started
+
+* [Quickstart guide](get-started/quickstart.md): will lead you through a simple task.
 
 ## Tutorials
 
