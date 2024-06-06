@@ -14,16 +14,8 @@ Expect this tutorial to take about 15 minutes to complete.
 
 Before you start this tutorial:
 
-1. Make sure you've completed these [prerequisites](../get-started/prereqs.md) on the development system you'll use for the tutorial.
-2. Confirm that your local service is running. If it's not, start it with this command:
-
-    ```shell
-    cd <your-github-workspace>/chauffeur-tracker/api
-    # Run the service and monitor its database file for updates
-    json-server -w chauffeur-tracker-db-source.json
-    ```
-
-3. Open the Postman app. For this tutorial, you'll use Postman to test your API calls.
+* Complete all the [prerequisites](../overview/prereqs.md) on the development system you'll use for the tutorial.
+* Open the Postman app, which you'll use to test your API calls.
 
 ## Enroll a new driver
 
@@ -35,10 +27,10 @@ To enroll a new driver, make a `POST` call to the [`drivers`](../reference/drive
     | UI Element | Values | Required | Notes |
     | -------------- | ------ | ------------ |------------ |
     | **METHOD** | POST | Required | Locate the drop-down menu next to the URL field. |
-    | **URL** | `{base_url}/drivers` | Required | |
+    | **URL** | `{server_url}/drivers` | Required | |
     |**Headers** | `Content-Type` | Optional | The format of the data to be posted. Default value is application/json. |
 
-1. In the request body, POST a JSON representation of SallyAnn's [`drivers`](drivers) object like this. You can change the values of each property as you’d like.
+1. In the request body, POST a JSON representation of SallyAnn's [`drivers`](../reference/drivers) object like this. You can change the values of each property as you’d like.
 
     ```js
         [

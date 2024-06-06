@@ -13,7 +13,7 @@ The documentation is organized as follows to enable you to dive right in and dis
 ## Overview
 
 * [Overview](overview/overview.md): helps you get oriented and assess the capabilities of the API.
-* [System Requirements](overview/prereqs.md): sets you up to use the API in your local development environment.
+* [System requirements](overview/prereqs.md): sets you up to use the API in your local development environment.
 * [Workflow](overview/workflow.md): clarifies key concepts to enrich your understanding of the API.  
 
 ## Get started

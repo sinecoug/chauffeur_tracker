@@ -14,16 +14,8 @@ Expect this tutorial to take about 15 minutes to complete.
 
 Before you start this tutorial:
 
-1. Make sure you've completed these [prerequisites](../get-started/prereqs.md) on the development system you'll use for the tutorial.
-2. Confirm that your local service is running. If it's not, start it with this command:
-
-    ```shell
-    cd <your-github-workspace>/chauffeur-tracker/api
-    # Run the service and monitor its database file for updates
-    json-server -w chauffeur-tracker-db-source.json
-    ```
-
-3. Open the Postman app. For this tutorial, you'll use Postman to test your API calls.
+* Complete all the [prerequisites](../overview/prereqs.md) on the development system you'll use for the tutorial.
+* Open the Postman app, which you'll use to test your API calls.
 
 ## About this task
 
@@ -42,7 +34,7 @@ To view all drivers, make a `GET` call to the [`drivers`](../reference/drivers) 
     | UI Element | Values | Required | Notes |
     | -------------- | ------ | ------------ |------------ |
     | **METHOD** | GET | Required | Locate the drop-down menu next to the URL field. |
-    | **URL** | `{base_url}/drivers` | Required |All drivers are returned unless you specify query parameters (see params) to return a specific driver. |
+    | **URL** | `{server_url}/drivers` | Required |All drivers are returned unless you specify query parameters (see params) to return a specific driver. |
     |**params** | `Key/Value` | Optional |  You can specify driver attributes as key/value query parameters. For example: *driverIdentity/Nana*. Note that key/value titles are case sensitive.  |
     |**Headers** | `Content-Type` | Optional | The format of the data to be posted. Default value is application/json. |
     |**Request body** | None |  |  |
@@ -73,10 +65,10 @@ Make a `POST` call to the [`schedules`](../reference/schedules) resource.
     | UI Element | Values | Required | Notes |
     | -------------- | ------ | ------------ |------------ |
     | **METHOD** | POST | Required | Locate the drop-down menu next to the URL field. |
-    | **URL** | `{base_url}/schedules` | Required |  |
+    | **URL** | `{server_url}/schedules` | Required |  |
     |**Headers** | `Content-Type` | Optional | The format of the data to be posted. Default value is application/json. |
 
-1. In the request body, POST a JSON representation of Nana's [`schedules`](schedules) object like this.
+1. In the request body, POST a JSON representation of Nana's [`schedules`](../reference/schedules) object like this.
 The *driverId* is the id you identified in your previous `GET` call to the [`drivers`](../reference/drivers) resource, if not already known. You can change the values of each property as you’d like.
 
     ```js

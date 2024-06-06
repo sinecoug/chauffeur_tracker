@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-# Retrieve drivers by property
+# Retrieve a driver by property
 
 Returns an array of [`drivers`](drivers) objects matching a specified property.
 
@@ -13,8 +13,12 @@ Assumption: to return the correct driver, you must know the property to query.
 
 ```shell
 
-{GET}{server_url}/drivers/?{property}={value}
+{server_url}/drivers/?{property}={value}
 ```
+
+## Method
+
+{GET}
 
 ## Query parameters
 
@@ -72,4 +76,4 @@ The sample response returns a driver matching the specified `driverIdentity`.
 ## Related information
 
 * [Tutorial: Retrieve a driver's cell phone number](../tutorials/how-to-get-a-driver-by-property.md)
-* [Quickstart guide > Security](../get-started/quickstart.md)
+* [Security](../get-started/quickstart.md#security)

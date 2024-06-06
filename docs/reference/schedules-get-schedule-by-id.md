@@ -13,8 +13,12 @@ Assumption: to return the correct driver's pick-up and drop-off schedule, you mu
 
 ```shell
 
-{GET}{server_url}/schedules/{driverId}
+{server_url}/schedules/{driverId}
 ```
+
+## Method
+
+{GET}
 
 ## Query parameters
 
@@ -78,4 +82,4 @@ None
 ## Related information
 
 * [Tutorial: Retrieve a driver's schedule](../tutorials/how-to-get-a-drivers-schedule.md)
-* [Quickstart guide > Security](../get-started/quickstart.md)
+* [Security](../get-started/quickstart.md#security)

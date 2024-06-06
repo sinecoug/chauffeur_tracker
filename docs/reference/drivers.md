@@ -46,11 +46,11 @@ The `drivers` resource supports these operations.
 
 ### CREATE (POST)
 
-* [Create a driver](drivers-create-driver.md)
+* [Create a driver object](drivers-create-driver.md)
 
 ### UPDATE (PUT/PATCH)
 
-* [Update a driver](drivers-update-driver-by-id.md)
+* [Update a specific driver](drivers-update-driver-by-id.md)
 * [Update a driver by property](drivers-update-driver-by-property.md)
 
 ### DELETE

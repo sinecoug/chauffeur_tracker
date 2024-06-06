@@ -15,8 +15,12 @@ The request body contains the updated schedule details.
 
 ```shell
 
-{PATCH}{server_url}/schedules/{id}
+{server_url}/schedules/{id}
 ```
+
+## Method
+
+{PATCH}
 
 ## Query parameters
 
@@ -53,8 +57,8 @@ The following table lists the properties that you can update.
 | `passenger` | Who the driver is to transport. | string | Required |  |
 | `pickupLocation` | Where the driver is to collect a passenger. | string | Required |  |
 | `dropoffLocation` | Where the driver is to drop off a passenger. | string | Required |  |
-| `pickupTime` | When the driver is to collect a passenger. | date-time | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time. |
-| `dropoffTime` | When the driver is to drop off a passenger. | date-time | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time. |
+| `pickupTime` | When the driver is to collect a passenger. | string | Required |The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time: YYYY-MM-DDTHH:MM:SS |
+| `dropoffTime` | When the driver is to drop off a passenger. | string | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time: YYYY-MM-DDTHH:MM:SS |
 | `status` | The status of the driving schedule. | string | Required |Allowed status values are *Scheduled*, *Canceled*, *Rescheduled*. |
 | `id` | The driving schedule's unique record ID.  | number | Required |  |
 
@@ -101,5 +105,5 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Tutorial: Change the status (property) of a driver's schedule](../tutorials/how-to-change-a-driver-schedule.md)
-* [Quickstart guide > Security](../get-started/quickstart.md)
+* [Tutorial: Change the status (property) of a driver's schedule](../tutorials/how-to-change-a-driver-schedule-property.md)
+* [Security](../get-started/quickstart.md#security)

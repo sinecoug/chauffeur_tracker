@@ -12,8 +12,12 @@ You must specify the required properties for the driver.
 
 ```shell
 
-{POST}{server_url}/drivers/
+{server_url}/drivers/
 ```
+
+## Method
+
+{POST}
 
 ## Request headers
 
@@ -78,4 +82,4 @@ The following example shows the response. Note that the names should be the same
 ## Related information
 
 * [Tutorial: Enroll a new driver](../tutorials/how-to-enroll-a-driver.md)
-* [Quickstart guide > Security](../get-started/quickstart.md)
+* [Security](../get-started/quickstart.md#security)

@@ -16,8 +16,12 @@ The request body contains the updated driver's details.
 
 ```shell
 
-{PATCH}{server_url}/drivers/{id}
+{server_url}/drivers/{id}
 ```
+
+## Method
+
+{PATCH}
 
 ## Query parameters
 
@@ -95,5 +99,5 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Tutorial: Change the status (property) of a driver's schedule](how-to-change-a-driver-schedule.md)
-* [Quickstart guide > Security](../get-started/quickstart.md)
+* [Tutorial: Change the status (property) of a driver's schedule](../tutorials/how-to-change-a-driver-schedule-property.md)
+* [Security](../get-started/quickstart.md#security)

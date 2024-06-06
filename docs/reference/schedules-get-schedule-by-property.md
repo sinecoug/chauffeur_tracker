@@ -13,8 +13,12 @@ Assumption: to return the correct schedule, you must know the property to query.
 
 ```shell
 
-{GET}{server_url}/schedules/?{property}={value}
+{server_url}/schedules/?{property}={value}
 ```
+
+## Method
+
+{GET}
 
 ## Query parameters
 
@@ -87,4 +91,4 @@ The sample response returns drivers' schedules matching the specified `passenger
 
 ## Related information
 
-* [Quickstart guide > Security](../get-started/quickstart.md)
+* [Security](../get-started/quickstart.md#security)

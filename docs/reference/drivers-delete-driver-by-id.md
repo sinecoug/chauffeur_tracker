@@ -13,8 +13,13 @@ Assumption: to delete the correct driver, you must know the `driverId` to query.
 
 ```shell
 
-{DELETE}{server_url}/drivers/{id}
+{server_url}/drivers/{id}
+
 ```
+
+## Method
+
+{DELETE}
 
 ## Query parameters
 
@@ -58,4 +63,4 @@ The sample response returns a driver matching the specified `id`, and deletes th
 
 ## Related information
 
-* [Quickstart guide > Security](../get-started/quickstart.md)
+* [Security](../get-started/quickstart.md#security)

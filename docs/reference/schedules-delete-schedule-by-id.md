@@ -13,8 +13,12 @@ Assumption: to delete the correct schedule, you must know the `Id` to query.
 
 ```shell
 
-{DELETE}{server_url}/schedules/{id}
+{server_url}/schedules/{id}
 ```
+
+## Method
+
+{DELETE}
 
 ## Query parameters
 
@@ -62,4 +66,4 @@ The sample response returns a schedule matching the specified `id`, and deletes 
 
 ## Related information
 
-* [Quickstart guide > Security](../get-started/quickstart.md)
+* [Security](../get-started/quickstart.md#security)

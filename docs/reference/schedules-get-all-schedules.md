@@ -9,8 +9,12 @@ Returns an array of [`schedules`](schedules) objects for all [`drivers`](drivers
 
 ```shell
 
-{GET}{server_url}/schedules/
+{server_url}/schedules/
 ```
+
+## Method
+
+{GET}
 
 ## Query Parameters
 
@@ -87,4 +91,4 @@ None
 
 ## Related information
 
-* [Quickstart guide > Security](../get-started/quickstart.md)
+* [Security](../get-started/quickstart.md#security)
