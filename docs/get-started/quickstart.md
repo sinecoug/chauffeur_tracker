@@ -16,16 +16,18 @@ You’ll learn about hosting a secure web service and how to make your first cal
 
 ## Base URL
 
-The Chauffeur Tracker API is served over HTTPS. All URLs referenced in the documentation have the following base: https://{server_url}The {server_url} variable depends on users' installation of the service in their development environment. For v1 of Chauffeur Tracker service, the {server_url} variable is typically set to <http://localhost:3000>.
+The Chauffeur Tracker API is served over HTTPS. All URLs referenced in the documentation have the following base: https://{server_url}.
+
+The {server_url} variable depends on users' installation of the service in their development environment. For v1 of Chauffeur Tracker service, the {server_url} variable is typically set to <http://localhost:3000>.
 
 ## Security
 
 At its heart, API security requires that the caller provides:
 
 - an authenticated identity (the *authentication*), and
-- evidence that the caller has permission to access the resources (the *authorization*)
+- evidence that the caller has permission to access the resources (the *authorization*).
 
-The Chauffeur Tracker service is an imaginary, *simulated* service. While it doesn't follow all real-world API access and restriction rules, the service does implement HTTP Basic Auth, which is a classic lock-and-key security model that's simple and widely used. Basic Auth requires a username and password combination that's Base64 encoded and sent in the HTTP Authorization header of a request.
+The Chauffeur Tracker service is an imaginary, *simulated* service. While it doesn't follow all the access and restriction rules, the service does implement HTTP Basic Auth, which is a classic lock-and-key security model that's simple and widely used. Basic Auth requires a username and password combination that's Base64 encoded and sent in the HTTP Authorization header of a request.
 
 In HTTP Basic Auth, the server-side application expects an Authorization header that contains a username and a password.
 
