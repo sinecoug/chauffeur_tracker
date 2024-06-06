@@ -2,11 +2,11 @@
 layout: page
 ---
 
-# Workflow and key concepts
+# Workflow
 
-xyz
+The key concepts outlined below 
 
-## Setting up the Chauffeur Tracker service
+## The Chauffeur Tracker service
 
 Driving schedules will surface in the Chauffeur Tracker service when they are created in the database and assigned to drivers (by driver {id}). If you’ve used the Chauffeur Tracker service previously, you’re already enrolled in the service and may have schedules to work with.
 
@@ -25,7 +25,7 @@ When they're registered, customers can update and delete schedules to suit their
 
 To build your API call, you must have the following components:
 
-* **A host.**  The {base_url} depends on users' installation of the service in their development environment. For v1 of Chauffeur Tracker Service API, the **base_url** variable is typically set to `http://localhost:3000`.
+* **A host.**  The {server_url} depends on users' installation of the service in their development environment. For v1 of Chauffeur Tracker Service API, the **server_url** variable is typically set to `http://localhost:3000`.
 * **Authorization.**  For v1 of the Chauffeur Tracker service, requests do not use any authorization. All endpoints are available to all users and applications.
 * **A request.**  The Chauffeur Tracker service REST API enables CRUD operations via HTTP requests on database resources (`GET`, `POST`, `PUT`, `PATCH`, and `DELETE` methods). Request and response bodies are encoded as JSON.
 
@@ -48,4 +48,7 @@ To build your API call, you must have the following components:
 | PATCH | [Update a schedule by property](../reference/schedules-update-schedule-by-property.md) |
 | DELETE | [Delete a schedule by ID](../reference/schedules-delete-schedule-by-id.md) |
 
-## Next steps
+
+## Related information
+
+* [Quickstart guide](quickstart.md)

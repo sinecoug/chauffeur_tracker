@@ -27,4 +27,4 @@ Elder care services, meals delivery...really, any organization that uses on-dema
 
 ## Quickstart
 
-So whether you're a new or seasoned app Developer, or just interested to learn more, let's get you up and running with the Chauffeur Tracker service. See the Quickstart guide.
+So whether you're a new or seasoned app Developer, or just interested to learn more, let's get you up and running with the Chauffeur Tracker service. See the [Quickstart guide](quickstart.md).
