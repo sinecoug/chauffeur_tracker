@@ -4,7 +4,7 @@ layout: page
 
 # Chauffeur Tracker workflows
 
-The following key concepts reveal how the Chaffeur Tracker service works under the hood.
+The following key concepts reveal how the Chauffeur Tracker service works under the hood.
 
 ## The Chauffeur Tracker service
 
@@ -18,7 +18,7 @@ The Chauffeur Tracker service REST API offers a wide range of integration possib
 
 The service comprises two resources: [`drivers`](drivers) and [`schedules`](schedules). The [`drivers`](drivers) resource (containing the subscribed drivers to the service) works in synergy with the [`schedules`](schedules) resource (containing the schedules) to align drivers with their driving schedules.
 
-Using this cloud-based service, customers (family members) can register themselves to create and manage their own driving schedules.
+Using this cloud-based service, customers (drivers) can register themselves to create and manage their own driving schedules.
 When they're registered, customers can update and delete schedules to suit their needs. Adding schedules on customers' behalf is easy - if an organization is collaborating with drivers, for example, they might be delegated on-demand driving requests and assigned schedules from different sources.
 
 ## How to use the Chauffeur Tracker service
@@ -26,7 +26,7 @@ When they're registered, customers can update and delete schedules to suit their
 To build your API call, you must have the following components:
 
 * **A host.**  The {server_url} depends on users' installation of the service in their development environment. For v1 of Chauffeur Tracker Service API, the **server_url** variable is typically set to `http://localhost:3000`.
-* **Authorization.**  For v1 of the Chauffeur Tracker service, requests do not use any authorization. All endpoints are available to all users and applications.
+* **Authorization.**  For v1 of the Chauffeur Tracker service, all API requests use HTTP Basic Auth - a security checkpoint that requires transmission of a username and password (Base64 encoded) with every request.
 * **A request.**  The Chauffeur Tracker service REST API enables CRUD operations via HTTP requests on database resources (`GET`, `POST`, `PUT`, `PATCH`, and `DELETE` methods). Request and response bodies are encoded as JSON.
 
 ### Supported endpoints
