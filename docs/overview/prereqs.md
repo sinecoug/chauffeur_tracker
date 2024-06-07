@@ -34,7 +34,7 @@ long-term support (LTS version of the operating system).
 
 To test your development system, follow these steps:
 
-1. Create and checkout a test branch of your fork of the To-Do-service repo. Your `GitHub repo workspace` is the directory that contains your fork of the `chauffeur-tracker` repo.
+1. Create and check out a test branch of your fork of the chauffeur-tracker-service repo. Your `GitHub repo workspace` is the directory that contains your fork of the `chauffeur-tracker` repo.
 
     ```shell
     cd <your GitHub repo workspace>
@@ -86,9 +86,13 @@ Some common situations that cause errors include:
 3. A required software component didn't install correctly.
 4. A required software component isn't up to date.
 
-If you see the list of users from the service, you're ready to do
+If you see the list of drivers from the service, you're ready to do
 the tutorials.
 
 ## Related information
 
-* [Quickstart guide](../get-started/quickstart.md)
+* [Enroll a driver in the service](../tutorials/how-to-enroll-a-driver.md)
+* [Create a new schedule for an enrolled driver](../tutorials/how-to-create-a-driver-schedule.md)
+* [Change the status of a driving appointment](../tutorials/how-to-change-a-driver-schedule-property.md)
+* [Retrieve a driver's *scheduled* commitments](../tutorials/how-to-get-a-drivers-schedule.md)
+* [Retrieve a driver's cell phone number for emergency calls](../tutorials/how-to-get-a-driver-by-property.md)
