@@ -18,13 +18,13 @@ The Chauffeur Tracker web service is an imaginary, *simulated* service. The API 
 
 ## Overview
 
-* [At a glance overview](overview/overview.md): get oriented and assess the capabilities of the API.
-* [API deep dive](overview/usage.md): enrich your understanding of the API and how it works.  
-* [System requirements](overview/prereqs.md): set up your local development environment to use the API. This is a one-time only task.
+* [At a glance overview](overview/overview.md) — get oriented and assess the capabilities of the API.
+* [API deep dive](overview/usage.md) — enrich your understanding of the API and how it works.  
 
 ## Get started
 
-* [Quickstart guide](get-started/quickstart.md): make a simple first call to the API.
+* [System requirements](overview/prereqs.md) — set up your local development environment to use the API. This is a one-time only task.
+* [Quickstart guide](get-started/quickstart.md) — make a simple first call to the API.
 
 ## Tutorials
 
@@ -45,7 +45,7 @@ Discover the endpoints for these resources:
 
 ### Status codes and errors
 
-* [Error handling information](overview/error-handling.md): get out of a bind if an error occurs.
+* [Error handling information](overview/error-handling.md) — get out of a bind if an error occurs.
 
 ## Support
 
