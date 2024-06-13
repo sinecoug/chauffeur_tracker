@@ -10,11 +10,16 @@ The Chauffeur Tracker service provides a cloud-hosted convenient service for man
 
 The documentation is organized as follows to enable you to dive right in and discover more.
 
+**NOTE:**
+The Chauffeur Tracker web service is an imaginary, *simulated* service. The API endpoints are documented to reflect exact behavior in production. If you wish, you can set up your local development environment to run and test and the documentation.
+
+---
+
 ## Overview
 
 * [Overview](overview/overview.md): helps you get oriented and assess the capabilities of the API.
 * [System requirements](overview/prereqs.md): sets you up to use the API in your local development environment.
-* [Workflow](overview/workflow.md): clarifies key concepts to enrich your understanding of the API.  
+* [Usage](overview/usage.md): clarifies key concepts to enrich your understanding of the API.  
 
 ## Get started
 
