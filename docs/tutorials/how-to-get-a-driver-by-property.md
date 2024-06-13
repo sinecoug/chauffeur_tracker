@@ -14,20 +14,8 @@ Expect this tutorial to take about 15 minutes to complete.
 
 Before you start this tutorial:
 
-1. Make sure you've completed these [prerequisites](../get-started/prereqs.md) on the development system you'll use for the tutorial.
-2. Confirm that your local service is running. If it's not, start it with this command:
-
-    ```shell
-    cd <your-github-workspace>/chauffeur-tracker/api
-    # Run the service and monitor its database file for updates
-    json-server -w chauffeur-tracker-db-source.json
-    ```
-
-3. Open the Postman app. For this tutorial, you'll use Postman to test your API calls.
-
-## About this task
-
-For this tutorial, you'll use Postman to test your API calls.
+* Complete all the [prerequisites](../overview/prereqs.md) on the development system you'll use for the tutorial.
+* Open the Postman app, which you'll use to test your API calls.
 
 ## Retrieve a driver
 
@@ -40,7 +28,7 @@ To view a driver in the service, make a `GET` call to the [`drivers`](../referen
     | UI Element | Values | Required | Notes |
     | -------------- | ------ | ------------ |------------ |
     | **METHOD** | GET | Required | Locate the drop-down menu next to the URL field. |
-    | **URL** | `{base_url}/drivers` | Required |All drivers are returned unless you specify query parameters (see params) to return a specific driver. |
+    | **URL** | `{server_url}/drivers` | Required |All drivers are returned unless you specify query parameters (see params) to return a specific driver. |
     |**params** | `Key/Value` | Optional | For the key/value pair, enter *driverIdentity/Mom*. Note that key/value titles are case sensitive.  |
     |**Headers** | `Content-Type` | Optional | The format of the data to be posted. Default value is application/json. |
     |**Request body** | None |  |  |

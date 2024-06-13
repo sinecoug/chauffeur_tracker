@@ -16,8 +16,12 @@ The request body contains the updated schedule details.
 
 ```shell
 
-{PUT}{server_url}/schedules/{id}
+{server_url}/schedules/{id}
 ```
+
+## Method
+
+{PUT}
 
 ## Query parameters
 
@@ -35,7 +39,7 @@ The request body contains the updated schedule details.
 
 ## Request body
 
-In the request body, specify a JSON representation of the [`schedule`](schedules) object. The following table lists the properties that are required when you create a schedule.
+In the request body, specify a JSON representation of the [`schedules`](schedules) object. The following table lists the properties that are required when you create a schedule.
 
 ---
 
@@ -52,8 +56,8 @@ To update/replace single property instances in the [`schedules`](schedules) obje
 | `passenger` | Who the driver is to transport. | string | Required |  |
 | `pickupLocation` | Where the driver is to collect a passenger. | string | Required |  |
 | `dropoffLocation` | Where the driver is to drop off a passenger. | string | Required |  |
-| `pickupTime` | When the driver is to collect a passenger. | date-time | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time. |
-| `dropoffTime` | When the driver is to drop off a passenger. | date-time | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time. |
+| `pickupTime` | When the driver is to collect a passenger. | string | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time: YYYY-MM-DDTHH:MM:SS |
+| `dropoffTime` | When the driver is to drop off a passenger. | string | Required | The [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format of the date and time: YYYY-MM-DDTHH:MM:SS |
 | `status` | The status of the driving schedule. | string | Required |Allowed status values are *Scheduled*, *Canceled*, *Rescheduled*. |
 | `id` | The driving schedule's unique record ID.  | number | Required |  |
 
@@ -107,4 +111,4 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Quickstart guide > Security](../get-started/quickstart.md)
+* [Security](../get-started/quickstart.md#security)

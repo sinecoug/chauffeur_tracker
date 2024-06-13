@@ -12,18 +12,8 @@ Expect this tutorial to take about 15 minutes to complete.
 
 ## Before you start
 
-Before you start this tutorial:
-
-1. Make sure you've completed these [prerequisites](../get-started/prereqs.md) on the development system you'll use for the tutorial.
-2. Confirm that your local service is running. If it's not, start it with this command:
-
-    ```shell
-    cd <your-github-workspace>/chauffeur-tracker/api
-    # Run the service and monitor its database file for updates
-    json-server -w chauffeur-tracker-db-source.json
-    ```
-
-3. Open the Postman app. For this tutorial, you'll use Postman to test your API calls.
+* Complete all the [prerequisites](../overview/prereqs.md) on the development system you'll use for the tutorial.
+* Open the Postman app, which you'll use to test your API calls.
 
 ## About this task
 
@@ -31,8 +21,6 @@ There's two parts to this task.
 
 1. Identify the driver's ID — unless you already know the driver's unique ID, you must first retrieve it from the list of available drivers. If you already know the driver’s ID, skip this step.
 2. Retrieve the *scheduled* driving commitments associated with the returned/known driver's ID.
-
-For this tutorial, you'll use Postman to test your API calls.
 
 ## Identify a driver's ID
 
@@ -44,7 +32,7 @@ To view all drivers, make a `GET` call to the [`drivers`](../reference/drivers) 
     | UI Element | Values | Required | Notes |
     | -------------- | ------ | ------------ |------------ |
     | **METHOD** | GET | Required | Locate the drop-down menu next to the URL field. |
-    | **URL** | `{base_url}/drivers` | Required |All drivers are returned unless you specify query parameters (see params) to return a specific driver. |
+    | **URL** | `{server_url}/drivers` | Required |All drivers are returned unless you specify query parameters (see params) to return a specific driver. |
     |**params** | `Key/Value` | Optional |  You can specify driver attributes as key/value query parameters. For example: *driverIdentity/Mom*. Note that key/value titles are case sensitive.  |
     |**Headers** | `Content-Type` | Optional | The format of the data to be posted. Default value is application/json. |
     |**Request body** | None |  |  |
@@ -75,7 +63,7 @@ Make a `GET` call to the [`schedules`](../reference/schedules) resource.
     | UI Element | Values | Required | Notes |
     | -------------- | ------ | ------------ |------------ |
     | **METHOD** | GET | Required | Locate the drop-down menu next to the URL field. |
-    | **URL** | `{base_url}/schedules` | Required | All schedules are returned unless you specify query parameters (see params) to return a specific schedule. |
+    | **URL** | `{server_url}/schedules` | Required | All schedules are returned unless you specify query parameters (see params) to return a specific schedule. |
     |**Params** | `Key/Value` | Required |  Specify these key/value query parameters: <br /> * *driverId/{id}* of the selected driver returned in your `GET` call, and  <br /> * *status/Scheduled* <br /> Note that key/value titles are case sensitive. |
     |**Headers** | `Content-Type` | Optional | The format of the data to be posted. Default value is application/json. |
     |**Request body** | None |   |  |

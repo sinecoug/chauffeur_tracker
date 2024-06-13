@@ -13,8 +13,12 @@ Assumption: to return the correct driver, you must know the `driverId` to query.
 
 ```shell
 
-{GET}{server_url}/drivers/{id}
+{server_url}/drivers/{id}
 ```
+
+## Method
+
+{GET}
 
 ## Query parameters
 
@@ -63,4 +67,4 @@ None
 
 ## Related information
 
-* [Quickstart guide > Security](../get-started/quickstart.md)
+* [Security](../get-started/quickstart.md#security)

@@ -18,7 +18,7 @@ You’ll learn about hosting a secure web service and how to make your first cal
 
 The Chauffeur Tracker API is served over HTTPS. All URLs referenced in the documentation have the following base: https://{server_url}.
 
-The {server_url} variable depends on users' installation of the service in their development environment. For v1 of Chauffeur Tracker service, the {server_url} variable is typically set to <http://localhost:3000>.
+The {server_url} variable depends on users' installation of the service in their development environment. For v1 of Chauffeur Tracker service, the {server_url} variable is typically set to <http://localhost>.
 
 ## Security
 
@@ -37,7 +37,7 @@ If it doesn't receive it, it returns an HTTP 401 "Unauthorized" error.
 
 Assume that you’re already enrolled in the Chauffeur Tracker service and you want to list all driving schedules as a first call to the API.
 
-Let’s test making this simple request to the [`schedules`](schedules) resource.  You’ll use cURL to make the API call, and for Basic Auth, include the -u parameter to pass the username and password and return the response without errors.
+Let’s test making this simple request to the [`schedules`](../reference/schedules.md) resource.  You’ll use cURL to make the API call, and for Basic Auth, include the -u parameter to bypass the username and password and return the response without errors.
 
 ```bash
 

@@ -9,8 +9,12 @@ Returns an array of [`drivers`](drivers) objects who are registered with the ser
 
 ```shell
 
-{GET}{server_url}/drivers/
+{server_url}/drivers/
 ```
+
+## Method
+
+{GET}
 
 ## Query parameters
 
@@ -64,4 +68,4 @@ None
 
 ## Related information
 
-* [Quickstart guide > Security](../get-started/quickstart.md)
+* [Security](../get-started/quickstart.md#security)

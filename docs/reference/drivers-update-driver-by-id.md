@@ -16,8 +16,12 @@ The request body contains the updated driver's details.
 
 ```shell
 
-{PUT}{server_url}/drivers/{id}
+{server_url}/drivers/{id}
 ```
+
+## Method
+
+{PUT}
 
 ## Query parameters
 
@@ -97,4 +101,4 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Quickstart guide > Security](../get-started/quickstart.md)
+* [Security](../get-started/quickstart.md#security)
