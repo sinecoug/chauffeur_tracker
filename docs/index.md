@@ -18,19 +18,17 @@ The Chauffeur Tracker web service is an imaginary, *simulated* service. The API 
 
 ## Overview
 
-* [Overview](overview/overview.md): helps you get oriented and assess the capabilities of the API.
-* [System requirements](overview/prereqs.md): sets you up to use the API in your local development environment.
-* [Usage](overview/usage.md): clarifies key concepts to enrich your understanding of the API.  
+* [At a glance overview](overview/overview.md): get oriented and assess the capabilities of the API.
+* [API deep dive](overview/usage.md): enrich your understanding of the API and how it works.  
+* [System requirements](overview/prereqs.md): set up your local development environment to use the API. This is a one-time only task.
 
 ## Get started
 
-* [Quickstart guide](get-started/quickstart.md): leads you through making a simple first call to the API.
+* [Quickstart guide](get-started/quickstart.md): make a simple first call to the API.
 
 ## Tutorials
 
-Tutorials teach you how to do common tasks with the API.
-
-Learn how to:
+Explore how to do common tasks with the API.
 
 * [Enroll a driver in the service](tutorials/how-to-enroll-a-driver.md)
 * [Create a new schedule for an enrolled driver](tutorials/how-to-create-a-driver-schedule.md)
@@ -40,16 +38,17 @@ Learn how to:
 
 ## API reference
 
-Reference documentation provides all the details about these resources:
+Discover details about these resources:
 
 * [`drivers` resource](reference/drivers.md): use to retrieve, create, and update driver objects.
 * [`schedules` resource](reference/schedules.md): use to retrieve, create, and update driving schedule objects.
 
 ### Status codes and errors
 
-* [Error handling information](overview/error-handling.md): gets you out of a bind if an error occurs.
+* [Error handling information](overview/error-handling.md): get out of a bind if an error occurs.
 
 ## Support
 
 If you have any questions or run into any issues while using the Chauffeur Tracker API, we're here to help!
+
 Contact us at chauffeur-tracker-service\@abc.com.
