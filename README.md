@@ -6,4 +6,4 @@ This *mock* API is designed to simulate the REST interface of an imaginary servi
 
 ## Documentation
 
-For the REST API docs, see The Chauffeur Tracker Service documentation. This is a GitHub Pages site, which is configured in the context of the repo settings.
+For the REST API docs, see the [Chauffeur Tracker documentation](https://sinecoug.github.io/chauffeur-tracker-service/). Docs are presented to you as a GitHub Pages site.

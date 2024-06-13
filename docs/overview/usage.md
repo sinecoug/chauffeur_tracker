@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Chauffeur Tracker deployment
+# Chauffeur Tracker usage
 
 The following key concepts reveal how the Chauffeur Tracker service works under the hood.
 
