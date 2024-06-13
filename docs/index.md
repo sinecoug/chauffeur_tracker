@@ -38,10 +38,10 @@ Explore how to do common tasks with the API.
 
 ## API reference
 
-Discover details about these resources:
+Discover the endpoints for these resources:
 
-* [`drivers` resource](reference/drivers.md): use to retrieve, create, and update driver objects.
-* [`schedules` resource](reference/schedules.md): use to retrieve, create, and update driving schedule objects.
+* [`drivers` resource](reference/drivers.md)
+* [`schedules` resource](reference/schedules.md)
 
 ### Status codes and errors
 
@@ -51,4 +51,4 @@ Discover details about these resources:
 
 If you have any questions or run into any issues while using the Chauffeur Tracker API, we're here to help!
 
-Contact us at chauffeur-tracker-service\@abc.com.
+Contact us at <https://www.chauffeurService.com/> or email <support@chauffeurService.com>.
