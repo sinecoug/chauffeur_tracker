@@ -6,6 +6,8 @@ layout: page
 
 With the Chauffeur Tracker service, you can build a cloud solution that simplifies the chore of coordinating driving schedules for multiple family commitments!
 
+![image_chauffeur-tracker.jpg](image_chauffeur-tracker.jpg)
+
 ## Real-world scenarios
 
 Most of us know a *Laura*, a busy mum of three, who's juggling kids' activities, her job, and household errands. She finds it hard to keep up with everyone's weekly schedules and remember who's going where and at what time. It's a huge coordination effort, right?
