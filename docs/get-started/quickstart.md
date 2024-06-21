@@ -12,13 +12,7 @@ This Quickstart provides all the information you need to begin using Chauffeur T
 
 You’ll learn about hosting a secure web service and how to make your first call to the API.
 
-## Base URL
-
-The Chauffeur Tracker API is served over HTTPS. All URLs referenced in the documentation have the following base: https://{server_url}.
-
-The {server_url} variable depends on users' installation of the service in their development environment. For v1 of Chauffeur Tracker service, the {server_url} variable is typically set to <http://localhost>.
-
-## Security
+## API Security
 
 At its heart, API security requires that the caller provides:
 
@@ -27,28 +21,54 @@ At its heart, API security requires that the caller provides:
 
 The Chauffeur Tracker service is an imaginary, *simulated* service. While it doesn't follow all the access and restriction rules, the service does implement HTTP Basic Auth, which is a classic lock-and-key security model that's simple and widely used. Basic Auth requires a username and password combination that's Base64 encoded and sent in the HTTP Authorization header of a request.
 
-In HTTP Basic Auth, the server-side application expects an Authorization header that contains a username and a password.
+In HTTP Basic Auth, the server-side application expects an Authorization header that contains a:
 
-If it doesn't receive it, it returns an HTTP 401 "Unauthorized" error.
+    - username 
+    - password
+
+If it doesn't receive it, it returns an HTTP 401 "Unauthorized" error. For more information, see [Error handling information](../overview/error-handling.md).
+
+## Base URL
+
+The Chauffeur Tracker API is served over HTTPS. All URLs referenced in the documentation have the following base: https://{server_url}.
+
+The {server_url} variable depends on users' installation of the service in their development environment. For v1 of Chauffeur Tracker service, the {server_url} variable is typically set to <http://localhost>.
+
+Here's how to set your base URL variable in Postman.
+
+1. In the request pane in the Postman interface, click on the **Params** tab.
+1. Click on **Add Param** button.
+1. Choose **URL** from the dropdown menu.
+1. Enter a name for your variable,for example, ```baseURL```.
+1. Enter the base URL for your API, for example, ```http://localhost:3000```.
+1. Click **Save**.  
+
+Note that whenever you create a new request, you can use the ```baseURL``` variable as part of your URL.
 
 ## Make your first API call – *List all driving schedules*
 
-For your first call to the API, assume that:
+For your first call to the API, assume that you’re already enrolled in the Chauffeur Tracker service and you want to list all driving schedules.
 
-*you've aleady set up your local development [system requirements](overview/prereqs.md) to use the API.
-*you’re already enrolled in the Chauffeur Tracker service and you want to list all driving schedules.
+- You've aleady set up your local [system requirements](../overview/prereqs.md) to use the API.
+- You’ll use cURL to make the API call, and for Basic Auth, include the -u parameter to bypass the username and password and return the response without errors.
 
-Let’s test making this simple request to the [`schedules`](../reference/schedules.md) resource.  You’ll use cURL to make the API call, and for Basic Auth, include the -u parameter to bypass the username and password and return the response without errors.
+Let’s test making this simple request to the [`schedules`](../reference/schedules.md) resource.  
 
-1. Open another command-line window and submit the following request to retrieve a list of drivers' schedules.
+Open another command-line window and submit the following request to retrieve a list of drivers' schedules.
 
-    **Sample request:**
+**Sample request:**
 
-    ``` curl
+    ``` shell
     curl -u user:pass http://localhost:3000/schedules
     ```
 
-    **Sample response:**
+---
+**Remember:**
+To make a request to ```http://localhost:3000/schedules```, you can simply use ```{baseURL}/drivers``` as your request URL.
+
+---
+
+**Sample response:**
 
     ```js
 
@@ -86,7 +106,7 @@ Let’s test making this simple request to the [`schedules`](../reference/schedu
             "id": "3"
         },
         {
-                "driverId": "1",
+            "driverId": "1",
             "title": "Vet visit",
             "passenger": "Minnie",
             "pickupLocation": "123 Main St, Springfield",

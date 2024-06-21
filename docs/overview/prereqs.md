@@ -4,7 +4,7 @@ layout: page
 
 # Set up your development environment
 
-These are the steps you must do before you can run
+You must do the following steps before you can run
 the tutorials for the **Chauffeur Tracker service**.
 
 Expect this preparation to take about 20 minutes to complete.
@@ -15,7 +15,7 @@ The following instructions describe how to prepare for running the tutorials on 
 
 For information about how to prepare MacOS for the tutorials, visit the [MacOS installation guide](macos-installation).
 
-Install the following tools on your devlopment system:
+Install the following tools on your development system:
 
 * A [GitHub account](https://github.com)
 * A development system (PC, Mac, or Linux) running a current or
@@ -56,7 +56,7 @@ To test your development system, follow these steps:
 
     ```
 
-    This installed Node.js version displays.
+    The installed Node.js version displays.
 
     ```shell
     v20.13.0
@@ -64,46 +64,48 @@ To test your development system, follow these steps:
 
 1. Create and check out a test branch of your fork of the chauffeur-tracker-service repo. Your `GitHub repo workspace` is the directory that contains your fork of the `chauffeur-tracker` repo.
 
-```shell
-    cd <your GitHub repo workspace>
-    # (see the chauffeur-tracker service directory in the list)
-    cd chauffeur-tracker-service
-    cd api
-    cd start-server.bat
-    ```
-     If your development system is installed correctly, you should see
-        the service start and display the URL of the service: `http://localhost:3000`.
-          
     ```shell
-    C:\chauffeur_tracker\api>json-server -w chauffeur-tracker-db-source.json
-    
-    --watch/-w can be omitted, JSON Server 1+ watches for file changes by default
-    JSON Server started on PORT :3000
-    Press CTRL-C to stop
-    Watching  chauffeur-tracker-db-source.json...
-    
-    ♡( ◡‿◡ )
-    
-    Index:
-    http://localhost:3000/
-    
-    Static files:
-    Serving ./public directory if it exists
-    
-    Endpoints:
-    http://localhost:3000/drivers
-    http://localhost:3000/schedules
-    
+        cd <your GitHub repo workspace>
+        # (see the chauffeur-tracker service directory in the list)
+        cd chauffeur-tracker-service
+        cd api
+        cd start-server.bat
+
     ```
 
-2. Make a test call to the service.
+    If your development system is installed correctly, you should see
+    the service start and display the URL of the service: `http://localhost:3000`.
+
+    ```shell
+         C:\chauffeur_tracker\api>json-server -w chauffeur-tracker-db-source.json
+    
+        --watch/-w can be omitted, JSON Server 1+ watches for file changes by default
+         JSON Server started on PORT :3000
+        Press CTRL-C to stop
+        Watching  chauffeur-tracker-db-source.json...
+    
+        ♡( ◡‿◡ )
+    
+        Index:
+        http://localhost:3000/
+    
+        Static files:
+        Serving ./public directory if it exists
+    
+        Endpoints:
+        http://localhost:3000/drivers
+        http://localhost:3000/schedules
+
+    ```
+
+1. Make a test call to the service.
 
     ```bash
 
         curl -u user:pass http://localhost:3000/drivers
     ```
 
-3. If the service is running correctly, you should see a list of drivers from the service, such as in this example.
+1. If the service is running correctly, you should see a list of drivers from the service, such as in this example.
 
     ```js
     [
@@ -128,18 +130,10 @@ If you don't see the list of drivers, or receive an error in any step
 of the procedure, investigate and correct the error before continuing.
 Some common situations that cause errors include:
 
-1. You mistyped a command.
-2. You aren't in the correct directory.
-3. A required software component didn't install correctly.
-4. A required software component isn't up to date.
+* You mistyped a command.
+* You aren't in the correct directory.
+* A required software component didn't install correctly.
+* A required software component isn't up to date.
 
 If you see the list of drivers from the service, you're ready to do
-the tutorials.
-
-## Tutorials
-
-* [Enroll a driver in the service](../tutorials/how-to-enroll-a-driver.md)
-* [Create a new schedule for an enrolled driver](../tutorials/how-to-create-a-driver-schedule.md)
-* [Change the status of a driving appointment](../tutorials/how-to-change-a-driver-schedule-property.md)
-* [Retrieve a driver's *scheduled* commitments](../tutorials/how-to-get-a-drivers-schedule.md)
-* [Retrieve a driver's cell phone number for emergency calls](../tutorials/how-to-get-a-driver-by-property.md)
+the tutorials. For more information, go [here](../index.md).
