@@ -10,7 +10,7 @@ With the Chauffeur Tracker service, you can build a cloud solution that simplifi
 
 ## Real-world scenarios
 
-Most of us know a *Laura*, a busy mum of three, who's juggling kids' activities, her job, and household errands. She finds it hard to keep up with everyone's weekly schedules and remember who's going where and at what time. It's a huge coordination effort, right?
+Most of us know a *Laura*, a busy mum who's juggling kids' activities, her job, and household errands. She finds it hard to keep up with everyone's weekly schedules and remember who's going where and at what time. It's a huge coordination effort, right?
 
 The Chauffeur Tracker service helps the Laura's of this world to manage her family's driving needs for the week, including school drop-offs, sports practice, and grocery pickups. By using this web service, you'll save your customers valuable time and energy and empower them to:
 

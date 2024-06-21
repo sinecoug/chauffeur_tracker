@@ -6,8 +6,6 @@ layout: page
 
 Are you looking for a way to plan and track your family's transport needs?
 
-Easily manage all your pick-up and drop-off schedules in the Chauffeur Tracker!
-
 ## At a glance
 
 This Quickstart provides all the information you need to begin using Chauffeur Tracker to track your family's driving schedules.
@@ -35,80 +33,82 @@ If it doesn't receive it, it returns an HTTP 401 "Unauthorized" error.
 
 ## Make your first API call – *List all driving schedules*
 
-Assume that you’re already enrolled in the Chauffeur Tracker service and you want to list all driving schedules as a first call to the API.
+For your first call to the API, assume that:
+
+*you've aleady set up your local development [system requirements](overview/prereqs.md) to use the API.
+*you’re already enrolled in the Chauffeur Tracker service and you want to list all driving schedules.
 
 Let’s test making this simple request to the [`schedules`](../reference/schedules.md) resource.  You’ll use cURL to make the API call, and for Basic Auth, include the -u parameter to bypass the username and password and return the response without errors.
 
-```bash
+1. Open another command-line window and submit the following request to retrieve a list of drivers' schedules.
 
-curl -u user:pass http://localhost:3000/schedules
-```
+    **Sample request:**
 
-If the call was successful, the response you receive will be a list of schedules from the Chauffeur Tracker service such as you see in this example:
+    ``` curl
+    curl -u user:pass http://localhost:3000/schedules
+    ```
 
-```js
+    **Sample response:**
 
-  {
-        "driverId": "1",
-        "title": "School run",
-        "passenger": "Molly",
-        "pickupLocation": "789 Oak St, Anytown",
-        "dropoffLocation": "321 Maple St, Anytown",
-        "pickupTime": "2024-06-16T09:00:00Z",
-        "dropoffTime": "2024-06-16T09:30:00Z",
-        "status": "Scheduled",
-        "id": "2"
-    },
-    {
-        "driverId": "2",
-        "title": "Baseball practice",
-        "passenger": "Richie",
-        "pickupLocation": "123 Main St, Springfield",
-        "dropoffLocation": "456 Elm St, Springfield",
-        "pickupTime": "2024-06-15T08:00:00Z",
-        "dropoffTime": "2024-06-15T08:30:00Z",
-        "status": "Scheduled",
-        "id": "1"
-    },
-    {
-        "driverId": "3",
-        "title": "Swimfest",
-        "passenger": "Molly",
-        "pickupLocation": "123 Main St, Springfield",
-        "dropoffLocation": "110 Nassau St, Springfield",
-        "pickupTime": "2024-07-22T08:00:00Z",
-        "dropoffTime": "2024-07-22T08:30:00Z",
-        "status": "Scheduled",
-        "id": "3"
-    },
-    {
-        "driverId": "1",
-        "title": "Vet visit",
-        "passenger": "Minnie",
-        "pickupLocation": "123 Main St, Springfield",
-        "dropoffLocation": "12 Animal Drive, Springfield",
-        "pickupTime": "2024-08-08T08:00:00Z",
-        "dropoffTime": "2024-08-08T08:30:00Z",
-        "status": "Scheduled",
-        "id": "4"
-    },
-    {
-        "id": "e3a8",
-        "driverID": "00ad",
-        "title": "Johnny's Dental visit",
-        "passenger": "Johnny",
-        "pickupLocation": "123 Main St, Springfield",
-        "dropoffLocation": "The Quay, Docks, Springfield",
-        "pickupTime": "2024-06-16T11:00:00Z",
-        "dropoffTime": "2024-07-16T12:00:00Z",
-        "status": "Canceled"
-    }
-```
+    ```js
 
-**NOTE:**
-cURL comes installed by default on Mac operating systems. If you need to, install it from [here](https://curl.se/windows/).
+        {
+            "driverId": "1",
+            "title": "School run",
+            "passenger": "Molly",
+            "pickupLocation": "789 Oak St, Anytown",
+            "dropoffLocation": "321 Maple St, Anytown",
+            "pickupTime": "2024-06-16T09:00:00Z",
+            "dropoffTime": "2024-06-16T09:30:00Z",
+            "status": "Scheduled",
+            "id": "2"
+        },
+        {
+            "driverId": "2",
+            "title": "Baseball practice",
+            "passenger": "Richie",
+            "pickupLocation": "123 Main St, Springfield",
+            "dropoffLocation": "456 Elm St, Springfield",
+            "pickupTime": "2024-06-15T08:00:00Z",
+            "dropoffTime": "2024-06-15T08:30:00Z",
+            "status": "Scheduled",
+            "id": "1"
+        },
+        {
+            "driverId": "3",
+            "title": "Swimfest",
+            "passenger": "Molly",
+            "pickupLocation": "123 Main St, Springfield",
+            "dropoffLocation": "110 Nassau St, Springfield",
+            "pickupTime": "2024-07-22T08:00:00Z",
+            "dropoffTime": "2024-07-22T08:30:00Z",
+            "status": "Scheduled",
+            "id": "3"
+        },
+        {
+                "driverId": "1",
+            "title": "Vet visit",
+            "passenger": "Minnie",
+            "pickupLocation": "123 Main St, Springfield",
+            "dropoffLocation": "12 Animal Drive, Springfield",
+            "pickupTime": "2024-08-08T08:00:00Z",
+            "dropoffTime": "2024-08-08T08:30:00Z",
+            "status": "Scheduled",
+            "id": "4"
+        },
+        {
+            "id": "e3a8",
+            "driverID": "00ad",
+            "title": "Johnny's Dental visit",
+            "passenger": "Johnny",
+            "pickupLocation": "123 Main St, Springfield",
+            "dropoffLocation": "The Quay, Docks, Springfield",
+            "pickupTime": "2024-06-16T11:00:00Z",
+            "dropoffTime": "2024-07-16T12:00:00Z",
+            "status": "Canceled"
+        }
 
----
+    ```
 
 ## Next steps
 

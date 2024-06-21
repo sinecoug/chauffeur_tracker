@@ -10,7 +10,7 @@ The Chauffeur Tracker service provides a cloud-hosted convenient service for man
 
 ---
 **NOTE:**
-Chauffeur Tracker is an imaginary, *simulated* web service. The API endpoints are documented to reflect true behavior in production. If you wish, you can set up your local development environment to run and test the documentation.
+Chauffeur Tracker is an imaginary, *simulated* web service. The API endpoints are intended to reflect true behavior in production. If you wish, you can set up your local development environment to run API calls and test the documentation.
 
 ---
 
@@ -21,7 +21,7 @@ Chauffeur Tracker is an imaginary, *simulated* web service. The API endpoints ar
 
 ## Get started
 
-* [System requirements](overview/prereqs.md) — set up your local development environment to use the API. This is a one-time only task.
+* [System requirements](overview/prereqs.md) — set up your local development environment to use the API. You only have to do this one time per development system.
 * [Quickstart guide](get-started/quickstart.md) — make a simple first call to the API.
 
 ## Tutorials
