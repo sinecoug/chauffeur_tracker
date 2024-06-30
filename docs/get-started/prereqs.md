@@ -13,7 +13,7 @@ Expect this preparation to take about 20 minutes to complete.
 
 The following instructions describe how to prepare for running the tutorials on Windows. You only have to do this one time per development system.
 
-For information about how to prepare MacOS for the tutorials, visit the [MacOS installation guide](macos-installation).
+For information about how to prepare MacOS for the tutorials, visit the [MacOS installation guide](../macos-installation).
 
 Install the following tools on your development system:
 
