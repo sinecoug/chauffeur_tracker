@@ -67,4 +67,4 @@ None
 
 ## Related information
 
-* [Security](../get-started/quickstart.md#security)
+* [Security](../../get-started/quickstart.md#security)

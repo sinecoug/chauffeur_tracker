@@ -48,19 +48,19 @@ The `schedules` resource supports these operations.
 
 ### RETRIEVE (GET)
 
-* [Retrieve all schedules](schedules-get-all-schedules.md)
-* [Retrieve schedules for a specific driver](schedules-get-schedule-by-id.md)
-* [Retrieve schedules by property](schedules-get-schedule-by-property.md)
+* [Retrieve all schedules](../operations/schedules-get-all-schedules.md)
+* [Retrieve schedules for a specific driver](../operations/schedules-get-schedule-by-id.md)
+* [Retrieve schedules by property](../operations/schedules-get-schedule-by-property.md)
 
 ### CREATE (POST)
 
-* [Create a schedule](schedules-create-schedule.md)
+* [Create a schedule](../operations/schedules-create-schedule.md)
 
 ### UPDATE (PUT/PATCH)
 
-* [Update a schedule for a specific driver](schedules-update-schedule-by-id.md)
-* [Update a schedule by property](schedules-update-schedule-by-property.md)
+* [Update a schedule for a specific driver](../operations/schedules-update-schedule-by-id.md)
+* [Update a schedule by property](../operations/schedules-update-schedule-by-property.md)
 
 ### DELETE
 
-* [Delete a schedule for a specific driver](schedules-delete-schedule-by-id.md)
+* [Delete a schedule for a specific driver](../operations/schedules-delete-schedule-by-id.md)

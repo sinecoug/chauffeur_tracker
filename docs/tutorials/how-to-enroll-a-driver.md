@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Tutorial: Enroll a new driver
+# Enroll a new driver
 
 Let's suppose that SallyAnn (*Nana*) wants to add herself to the family's driving rota to ease their load.
 

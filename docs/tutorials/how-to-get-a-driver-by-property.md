@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Tutorial: Retrieve a driver's cell phone number
+# Retrieve a driver's cell phone number
 
 Let's suppose that Mom, *Laura*, is late for a pick-up and her passenger, Molly, needs her cell phone number to check in with her.
 

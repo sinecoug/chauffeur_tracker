@@ -1,20 +1,19 @@
 ---
 layout: page
 ---
-# Delete a specific driver
+# Delete a schedule for a specific driver
 
-Deletes a [`drivers`](drivers) object in the database.
+Deletes a [`schedules`](schedules) object in the database.
 
-For example, you want to delete *driverId=4* from the database.
+For example, you want to delete schedule *Id=6* from the database.
 
-Assumption: to delete the correct driver, you must know the `driverId` to query.
+Assumption: to delete the correct schedule, you must know the `Id` to query.
 
 ## URL
 
 ```shell
 
-{server_url}/drivers/{id}
-
+{server_url}/schedules/{id}
 ```
 
 ## Method
@@ -25,7 +24,7 @@ Assumption: to delete the correct driver, you must know the `driverId` to query.
 
 | Property | Description | Type | Required | Notes |
 | -------------- | ------ | ------------ |------------ |------------ |
-| `driverID` | The record ID of the driver to delete.  | number | Required |  |
+| `Id` | The record ID of the schedule to return.  | number | Required |  |
 
 ## Request headers
 
@@ -39,16 +38,20 @@ None
 
 ## Return body
 
-The sample response returns a driver matching the specified `id`, and deletes the object in the database.
+The sample response returns a schedule matching the specified `id`, and deletes the object in the database.
 
 ```js
 [
-    {
-        "driverName": "SallyAnn Issac",
-        "driverIdentity": "Nana",
-        "cellPhone": "(555)555-9874",
-        "email": "s.issac@gmail.com",
-        "id": "fd05"
+   {
+        "id": "6",
+        "driverID": "5",
+        "title": "Birthday party celebration",
+        "passenger": "Johnny & Molly, Frankie and Jill",
+        "pickupLocation": "123 Main St, Springfield",
+        "dropoffLocation": "Omniplex, 112 Baker St, Springfield",
+        "pickupTime": "2024-07-09T19:30:00Z",
+        "dropoffTime": "2024-07-09T23:00:00Z",
+        "status": "Unscheduled"
     }
     ...
 ]
@@ -63,4 +66,4 @@ The sample response returns a driver matching the specified `id`, and deletes th
 
 ## Related information
 
-* [Security](../get-started/quickstart.md#security)
+* [Security](../../get-started/quickstart.md#security)

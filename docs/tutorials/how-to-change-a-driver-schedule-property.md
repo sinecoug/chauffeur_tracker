@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Tutorial: Change the status (property) of a driver's schedule
+# Change the status (property) of a driver's schedule
 
 Let's suppose that Johnny's dental appointment has been canceled. You want to update SallyAnn's driving schedule to reflect the changed status for this appointment.
 
