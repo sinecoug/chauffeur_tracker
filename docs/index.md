@@ -28,18 +28,18 @@ Chauffeur Tracker is an imaginary, *simulated* web service. The API endpoints ar
 
 Explore how to do common tasks with the API.
 
-* [Enroll a driver in the service](tutorials/how-to-enroll-a-driver.md)
-* [Create a new schedule for an enrolled driver](tutorials/how-to-create-a-driver-schedule.md)
-* [Change the status of a driving appointment](tutorials/how-to-change-a-driver-schedule-property.md)
-* [Retrieve a driver's *scheduled* commitments](tutorials/how-to-get-a-drivers-schedule.md)
-* [Retrieve a driver's cell phone number for emergency calls](tutorials/how-to-get-a-driver-by-property.md)
+* [Enroll a driver in the service](tutorials/1-how-to-enroll-a-driver.md)
+* [Create a new schedule for an enrolled driver](tutorials/2-how-to-create-a-driver-schedule.md)
+* [Retrieve a driver's *scheduled* commitments](tutorials/3-how-to-get-a-drivers-schedule.md)
+* [Change the status of a driving appointment](tutorials/4-how-to-change-a-driver-schedule-property.md)
+* [Retrieve a driver's cell phone number for emergency calls](tutorials/5-how-to-get-a-driver-by-property.md)
 
 ## API reference
 
 Discover the endpoints for these resources:
 
-* [`drivers` resource](reference/resource/drivers.md)
-* [`schedules` resource](reference/resource/schedules.md)
+* [`drivers` resource](reference/1_resources/drivers.md)
+* [`schedules` resource](reference/1_resources/schedules.md)
 
 ### Status codes and errors
 
