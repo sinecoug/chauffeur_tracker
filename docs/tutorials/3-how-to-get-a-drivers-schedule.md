@@ -100,4 +100,4 @@ Make a `GET` call to the [`schedules`](../reference/schedules) resource.
 
 ## Related information
 
-* [Endpoint: Retrieve schedules for a specific driver](../reference/schedules-get-schedule-by-id.md)
+* [Endpoint: Retrieve schedules for a specific driver](../reference/2_operations/schedules-get-schedule-by-id.md)

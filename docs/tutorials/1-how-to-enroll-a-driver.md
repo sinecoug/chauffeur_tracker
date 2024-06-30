@@ -60,4 +60,4 @@ To enroll a new driver, make a `POST` call to the [`drivers`](../reference/drive
 
 ## Related information
 
-* [Endpoint: Create a driver object](../reference/drivers-create-driver.md)
+* [Endpoint: Create a driver object](../reference/2_operations/drivers-create-driver.md)

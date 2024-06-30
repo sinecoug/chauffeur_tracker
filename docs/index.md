@@ -43,7 +43,7 @@ Discover the endpoints for these resources:
 
 ### Status codes and errors
 
-* [Error handling information](reference/error-handling.md) — get out of a bind if an error occurs.
+* [Error handling information](reference/3_error-handling.md) — get out of a bind if an error occurs.
 
 ## Support
 
