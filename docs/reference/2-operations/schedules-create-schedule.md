@@ -92,5 +92,5 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Tutorial: Create a driver's schedule](../../tutorials/how-to-create-a-driver-schedule.md)
+* [Tutorial: Create a driver's schedule](../../tutorials/2-how-to-create-a-driver-schedule.md)
 * [Security](../../get-started/quickstart.md#security)

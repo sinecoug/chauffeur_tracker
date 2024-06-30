@@ -108,4 +108,4 @@ The *driverId* is the id you identified in your previous `GET` call to the [`dri
 
 ## Related information
 
-* [Endpoint: Create a schedule](../reference/2_operations/schedules-create-schedule.md)
+* [Endpoint: Create a schedule](../reference/2-operations/schedules-create-schedule.md)

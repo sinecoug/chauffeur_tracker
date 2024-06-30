@@ -99,5 +99,5 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Tutorial: Change the status (property) of a driver's schedule](../tutorials/how-to-change-a-driver-schedule-property.md)
-* [Security](../get-started/quickstart.md#security)
+* [Tutorial: Change the status (property) of a driver's schedule](../../tutorials/tutorials/4-how-to-change-a-driver-schedule-property.md)
+* [Security](../../get-started/quickstart.md#security)

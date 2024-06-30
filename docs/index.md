@@ -38,12 +38,12 @@ Explore how to do common tasks with the API.
 
 Discover the endpoints for these resources:
 
-* [`drivers` resource](reference/1_resources/drivers.md)
-* [`schedules` resource](reference/1_resources/schedules.md)
+* [`drivers` resource](reference/1-resources/drivers.md)
+* [`schedules` resource](reference/1-resources/schedules.md)
 
 ### Status codes and errors
 
-* [Error handling information](reference/3_error-handling.md) — get out of a bind if an error occurs.
+* [Error handling information](reference/3-error-handling.md) — get out of a bind if an error occurs.
 
 ## Support
 

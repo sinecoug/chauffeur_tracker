@@ -75,5 +75,5 @@ The sample response returns a driver matching the specified `driverIdentity`.
 
 ## Related information
 
-* [Tutorial: Retrieve a driver's cell phone number](../tutorials/how-to-get-a-driver-by-property.md)
+* [Tutorial: Retrieve a driver's cell phone number](../tutorials/4-how-to-get-a-driver-by-property.md)
 * [Security](../../get-started/quickstart.md#security)

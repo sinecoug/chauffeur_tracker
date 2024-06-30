@@ -102,4 +102,4 @@ Make a `PATCH` call to the [`schedules`](../reference/schedules) resource.
 
 ## Related information
 
-* [Endpoint: Update a schedule by property](../reference/2_operations/schedules-update-schedule-by-property.md)
+* [Endpoint: Update a schedule by property](../reference/2-operations/schedules-update-schedule-by-property.md)
