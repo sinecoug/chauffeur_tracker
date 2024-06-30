@@ -91,4 +91,4 @@ The sample response returns drivers' schedules matching the specified `passenger
 
 ## Related information
 
-* [Security](../get-started/quickstart.md#security)
+* [Security](../../get-started/quickstart.md#security)

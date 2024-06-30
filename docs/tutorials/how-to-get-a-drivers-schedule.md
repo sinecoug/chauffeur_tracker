@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Tutorial: Retrieve a driver's schedule
+# Retrieve a driver's schedule
 
 Let's suppose that Mom, *Laura*, wants a list of her *scheduled* driving commitments.
 

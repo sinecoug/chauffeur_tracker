@@ -101,4 +101,4 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Security](../get-started/quickstart.md#security)
+* [Security](../../get-started/quickstart.md#security)

@@ -1,24 +1,37 @@
 ---
 layout: page
 ---
-# Retrieve all schedules
+# Retrieve schedules for a specific driver
 
-Returns an array of [`schedules`](schedules) objects for all [`drivers`](drivers) who are registered with the service.
+Returns an array of [`schedules`](schedules) objects for a specified `driverId`, if it exists.
+
+For example, you want to retrieve the driving schedule of *driverId=1* from the database.
+
+Assumption: to return the correct driver's pick-up and drop-off schedule, you must know the `driverId` to query.
 
 ## URL
 
 ```shell
 
-{server_url}/schedules/
+{server_url}/schedules/{driverId}
 ```
 
 ## Method
 
 {GET}
 
-## Query Parameters
+## Query parameters
 
-None
+| Property | Description | Type | Required | Notes |
+| -------------- | ------ | ------------ |------------ |------------ |
+| `driverId` | The record ID of the driver to return.  | number | Required |  |
+
+---
+
+**NOTE:**
+To retrieve a driver's schedule by title or other property, further filter your [schedules request](schedules-get-schedule-by-property.md).
+
+---
 
 ## Request headers
 
@@ -34,7 +47,7 @@ None
 
 ```js
 [
-    {
+   {
         "driverId": "1",
         "title": "School run",
         "passenger": "Molly",
@@ -46,28 +59,6 @@ None
         "id": "2"
     },
     {
-        "driverId": "2",
-        "title": "Baseball practice",
-        "passenger": "Richie",
-        "pickupLocation": "123 Main St, Springfield",
-        "dropoffLocation": "456 Elm St, Springfield",
-        "pickupTime": "2024-06-15T08:00:00Z",
-        "dropoffTime": "2024-06-15T08:30:00Z",
-        "status": "Scheduled",
-        "id": "1"
-    },
-    {
-        "driverId": "3",
-        "title": "Swimfest",
-        "passenger": "Molly",
-        "pickupLocation": "123 Main St, Springfield",
-        "dropoffLocation": "110 Nassau St, Springfield",
-        "pickupTime": "2024-07-22T08:00:00Z",
-        "dropoffTime": "2024-07-22T08:30:00Z",
-        "status": "Scheduled",
-        "id": "3"
-    },
-    {
         "driverId": "1",
         "title": "Vet visit",
         "passenger": "Minnie",
@@ -75,8 +66,7 @@ None
         "dropoffLocation": "12 Animal Drive, Springfield",
         "pickupTime": "2024-08-08T08:00:00Z",
         "dropoffTime": "2024-08-08T08:30:00Z",
-        "status": "Scheduled",
-        "id": "4"
+        "status": "Scheduled"
     }
     ...
 ]
@@ -91,4 +81,5 @@ None
 
 ## Related information
 
-* [Security](../get-started/quickstart.md#security)
+* [Tutorial: Retrieve a driver's schedule](../../tutorials/how-to-get-a-drivers-schedule.md)
+* [Security](../../get-started/quickstart.md#security)

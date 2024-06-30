@@ -18,7 +18,7 @@ Sample `drivers` resource
 
 ```js
 {
-    "driverName": "Faith Jaxon",
+    "driverName": "Laura Jaxon",
     "driverIdentity": "Mom"
     "cellPhone": "(555)555-1234"
     "email": "f.smith@gmail.com"
@@ -40,19 +40,19 @@ The `drivers` resource supports these operations.
 
 ### RETRIEVE (GET)
 
-* [Retrieve all drivers](drivers-get-all-drivers.md)
-* [Retrieve a specific driver](drivers-get-driver-by-id.md)
-* [Retrieve a driver by property](drivers-get-driver-by-property.md)
+* [Retrieve all drivers](../operations/drivers-get-all-drivers.md)
+* [Retrieve a specific driver](../operations/drivers-get-driver-by-id.md)
+* [Retrieve a driver by property](../operations/drivers-get-driver-by-property.md)
 
 ### CREATE (POST)
 
-* [Create a driver object](drivers-create-driver.md)
+* [Create a driver object](../operations/drivers-create-driver.md)
 
 ### UPDATE (PUT/PATCH)
 
-* [Update a specific driver](drivers-update-driver-by-id.md)
-* [Update a driver by property](drivers-update-driver-by-property.md)
+* [Update a specific driver](../operations/drivers-update-driver-by-id.md)
+* [Update a driver by property](../operations/drivers-update-driver-by-property.md)
 
 ### DELETE
 
-* [Delete a specific driver](drivers-delete-driver-by-id.md)
+* [Delete a specific driver](../operations/drivers-delete-driver-by-id.md)

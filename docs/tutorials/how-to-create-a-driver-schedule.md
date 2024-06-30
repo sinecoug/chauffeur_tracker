@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Tutorial: Create a driver's schedule
+# Create a driver's schedule
 
 Let's suppose that you've enrolled SallyAnn (*Nana*) in the service, and you want to create a driving schedule for her. She's offered to drive her grandson, Johnny, to and from a dental appointment.
 

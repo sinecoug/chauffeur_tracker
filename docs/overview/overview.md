@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Chauffeur Tracker service API
+# About the Chauffeur Tracker service API
 
 With the Chauffeur Tracker service, you can build a cloud solution that simplifies the chore of coordinating driving schedules for multiple family commitments!
 

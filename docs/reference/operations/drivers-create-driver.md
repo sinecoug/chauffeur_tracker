@@ -81,5 +81,5 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Tutorial: Enroll a new driver](../tutorials/how-to-enroll-a-driver.md)
-* [Security](../get-started/quickstart.md#security)
+* [Tutorial: Enroll a new driver](../../tutorials/how-to-enroll-a-driver.md)
+* [Security](../../get-started/quickstart.md#security)
