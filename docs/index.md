@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Chauffeur Tracker service API
+# Home
 
 Effortlessly manage your family's driving schedule!
 
@@ -19,7 +19,7 @@ Chauffeur Tracker is an imaginary, *simulated* web service. The API endpoints ar
 * [At a glance overview](overview/overview.md) — get oriented and assess the capabilities of the API.
 * [API deep dive](overview/usage.md) — enrich your understanding of the API and how it works.  
 
-## Get started
+## Quickstart
 
 * [System requirements](overview/prereqs.md) — set up your local development environment to use the API. You only have to do this one time per development system.
 * [Quickstart guide](get-started/quickstart.md) — make a simple first call to the API.
