@@ -40,19 +40,19 @@ The `drivers` resource supports these operations.
 
 ### RETRIEVE (GET)
 
-* [Retrieve all drivers](../operations/drivers-get-all-drivers.md)
-* [Retrieve a specific driver](../operations/drivers-get-driver-by-id.md)
-* [Retrieve a driver by property](../operations/drivers-get-driver-by-property.md)
+* [Retrieve all drivers](../2-operations/drivers-get-all-drivers.md)
+* [Retrieve a specific driver](../2-operati/drivers-get-driver-by-id.md)
+* [Retrieve a driver by property](../2-operati/drivers-get-driver-by-property.md)
 
 ### CREATE (POST)
 
-* [Create a driver object](../operations/drivers-create-driver.md)
+* [Create a driver object](../2-operations/drivers-create-driver.md)
 
 ### UPDATE (PUT/PATCH)
 
-* [Update a specific driver](../operations/drivers-update-driver-by-id.md)
-* [Update a driver by property](../operations/drivers-update-driver-by-property.md)
+* [Update a specific driver](../2-operations/drivers-update-driver-by-id.md)
+* [Update a driver by property](../2-operations/drivers-update-driver-by-property.md)
 
 ### DELETE
 
-* [Delete a specific driver](../operations/drivers-delete-driver-by-id.md)
+* [Delete a specific driver](../2-operations/drivers-delete-driver-by-id.md)

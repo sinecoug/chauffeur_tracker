@@ -81,5 +81,5 @@ None
 
 ## Related information
 
-* [Tutorial: Retrieve a driver's schedule](../../tutorials/how-to-get-a-drivers-schedule.md)
+* [Tutorial: Retrieve a driver's schedule](../../tutorials/3-how-to-get-a-drivers-schedule.md)
 * [Security](../../get-started/quickstart.md#security)

@@ -50,4 +50,4 @@ To view a driver in the service, make a `GET` call to the [`drivers`](../referen
 
 ## Related information
 
-* [Endpoint: Retrieve drivers by property](../reference/2_operations/drivers-get-driver-by-property.md)
+* [Endpoint: Retrieve drivers by property](../reference/2-operations/drivers-get-driver-by-property.md)
