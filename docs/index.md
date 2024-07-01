@@ -21,8 +21,8 @@ Chauffeur Tracker is an imaginary, *simulated* web service. The API endpoints ar
 
 ## Quickstart
 
-* [System requirements](get-started/prereqs.md) — set up your local development environment to use the API. You only have to do this one time per development system.
-* [Quickstart guide](get-started/quickstart.md) — make a simple first call to the API.
+* [System requirements](.get-started/1-prereqs.md) — set up your local development environment to use the API. You only have to do this one time per development system.
+* [Quickstart guide](get-started/2-quickstart.md) — make a simple first call to the API.
 
 ## Tutorials
 
@@ -43,7 +43,7 @@ Discover the endpoints for these resources:
 
 ### Status codes and errors
 
-* [Error handling information](reference/3-error-handling.md) — get out of a bind if an error occurs.
+* [Error handling information](reference/4-error-handling.md) — get out of a bind if an error occurs.
 
 ## Support
 

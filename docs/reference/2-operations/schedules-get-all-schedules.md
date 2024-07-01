@@ -3,7 +3,7 @@ layout: page
 ---
 # Retrieve all schedules
 
-Returns an array of [`schedules`](schedules) objects for all [`drivers`](drivers) who are registered with the service.
+Returns an array of [`schedules`](../1-resources/schedules.md) objects for all [`drivers`](../1-resources/drivers.md) who are registered with the service.
 
 ## URL
 
@@ -91,4 +91,4 @@ None
 
 ## Related information
 
-* [Security](../../get-started/quickstart.md#security)
+* [Security](../../get-started/2-quickstart.md#security)

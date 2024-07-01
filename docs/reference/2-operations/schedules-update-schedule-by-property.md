@@ -4,7 +4,7 @@ layout: page
 
 # Update a schedule by property
 
-Updates and replaces property instances in the [`schedules`](schedules) object.
+Updates and replaces property instances in the [`schedules`](../1-resources/schedules.md) object.
 
 For example, you want to update properties of schedule *id=6* in the database.
 Assumption: to update the correct schedule, you must know the schedule `Id` to query.
@@ -38,14 +38,14 @@ The request body contains the updated schedule details.
 
 ## Request body
 
-In the request body, specify a JSON representation of the [`schedules`](schedules) object.
+In the request body, specify a JSON representation of the [`schedules`](../1-resources/schedules.md) object.
 
 ---
 
 **IMPORTANT:**
-With a {PATCH} call, the request body replaces specified properties of the [`schedules`](schedules) object.
+With a {PATCH} call, the request body replaces specified properties of the [`schedules`](../1-resources/schedules.md) object.
 
-To update/replace all the properties in the [`schedules`](schedules) object, use a {PUT} call in your [schedules request](schedules-update-schedule-by-id.md).
+To update/replace all the properties in the [`schedules`](../1-resources/schedules.md) object, use a {PUT} call in your [schedules request](../2-operations/schedules-update-schedule-by-id.md).
 
 ---
 
@@ -106,4 +106,4 @@ The following example shows the response. Note that the names should be the same
 ## Related information
 
 * [Tutorial: Change the status (property) of a driver's schedule](../../tutorials/4-how-to-change-a-driver-schedule-property.md)
-* [Security](../../get-started/quickstart.md#security)
+* [Security](../../get-started/2-quickstart.md#security)

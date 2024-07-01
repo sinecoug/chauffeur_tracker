@@ -3,7 +3,7 @@ layout: page
 ---
 # Retrieve a driver by property
 
-Returns an array of [`drivers`](drivers) objects matching a specified property.
+Returns an array of [`drivers`](../1-resources/drivers.md) objects matching a specified property.
 
 For example, to return a driver by cell phone number, query the property `cellPhone` to filter responses.
 
@@ -75,5 +75,5 @@ The sample response returns a driver matching the specified `driverIdentity`.
 
 ## Related information
 
-* [Tutorial: Retrieve a driver's cell phone number](../tutorials/4-how-to-get-a-driver-by-property.md)
-* [Security](../../get-started/quickstart.md#security)
+* [Tutorial: Retrieve a driver's cell phone number](../../tutorials/4-how-to-change-a-driver-schedule-property.md)
+* [Security](../../get-started/2-quickstart.md#security)

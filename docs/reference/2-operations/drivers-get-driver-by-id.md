@@ -3,7 +3,7 @@ layout: page
 ---
 # Retrieve a specific driver
 
-Returns an array of [`drivers`](drivers) objects for the specified `driverId`, if it exists.
+Returns an array of [`drivers`](../1-resources/drivers.md) objects for the specified `driverId`, if it exists.
 
 For example, you want to retrieve *driverId=1* from the database.
 
@@ -67,4 +67,4 @@ None
 
 ## Related information
 
-* [Security](../../get-started/quickstart.md#security)
+* [Security](../../get-started/2-quickstart.md#security)

@@ -4,7 +4,7 @@ layout: page
 
 # Update a schedule for a specific driver
 
-Updates a driver's [`schedules`](schedules) object in the database.
+Updates a driver's [`schedules`](../1-resources/schedules.md) object in the database.
 
 For example, you want to update properties associated with schedule *id=6* in the database.
 
@@ -39,14 +39,14 @@ The request body contains the updated schedule details.
 
 ## Request body
 
-In the request body, specify a JSON representation of the [`schedules`](schedules) object. The following table lists the properties that are required when you create a schedule.
+In the request body, specify a JSON representation of the [`schedules`](../1-resources/schedules.md) object. The following table lists the properties that are required when you create a schedule.
 
 ---
 
 **IMPORTANT:**
-With a {PUT} call, the request body replaces the current properties of the [`schedules`](schedules) object.
+With a {PUT} call, the request body replaces the current properties of the [`schedules`](../1-resources/schedules.md) object.
 
-To update/replace single property instances in the [`schedules`](schedules) object, use a {PATCH} call in your [schedules request](schedules-update-schedule-by-property.md).
+To update/replace single property instances in the [`schedules`](../1-resources/schedules.md) object, use a {PATCH} call in your [schedules request](../2-operations/schedules-update-schedule-by-property.md).
 
 ---
 
@@ -111,4 +111,4 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Security](../../get-started/quickstart.md#security)
+* [Security](../../get-started/2-quickstart.md#security)
