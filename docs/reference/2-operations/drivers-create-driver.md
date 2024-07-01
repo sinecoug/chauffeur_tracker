@@ -4,7 +4,7 @@ layout: page
 
 # Create a driver object
 
-Creates a [`drivers`](drivers) object in the database.
+Creates a [`drivers`](../1-resources/drivers.md) object in the database.
 The request body contains the new driver's details.
 You must specify the required properties for the driver.
 
@@ -29,7 +29,7 @@ You must specify the required properties for the driver.
 
 ## Request body
 
-In the request body, specify a JSON representation of the [`drivers`](drivers) object. The following table lists the properties that are required when you create a driver object.
+In the request body, specify a JSON representation of the [`drivers`](../1-resources/drivers.md) object. The following table lists the properties that are required when you create a driver object.
 
 | Property | Description | Type | Required | Notes |
 | -------------- | ------ | ------------ |------------ |------------ |
@@ -82,4 +82,4 @@ The following example shows the response. Note that the names should be the same
 ## Related information
 
 * [Tutorial: Enroll a new driver](../../tutorials/1-how-to-enroll-a-driver.md)
-* [Security](../../get-started/quickstart.md#security)
+* [Security](../../get-started/2-quickstart.md#security)

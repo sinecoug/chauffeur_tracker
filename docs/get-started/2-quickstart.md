@@ -26,7 +26,7 @@ In HTTP Basic Auth, the server-side application expects an Authorization header 
     - username 
     - password
 
-If it doesn't receive it, it returns an HTTP 401 "Unauthorized" error. For more information, see [Error handling information](../overview/error-handling.md).
+If it doesn't receive it, it returns an HTTP 401 "Unauthorized" error. For more information, see [Error handling information](../reference/3-error-handling.md).
 
 ## Base URL
 
@@ -49,10 +49,10 @@ Note that whenever you create a new request, you can use the ```baseURL``` varia
 
 For your first call to the API, assume that you’re already enrolled in the Chauffeur Tracker service and you want to list all driving schedules.
 
-- You've aleady set up your local [system requirements](../overview/prereqs.md) to use the API.
+- You've aleady set up your local [system requirements](../get-started/1-prereqs.md) to use the API.
 - You’ll use cURL to make the API call, and for Basic Auth, include the -u parameter to bypass the username and password and return the response without errors.
 
-Let’s test making this simple request to the [`schedules`](../reference/schedules.md) resource.  
+Let’s test making this simple request to the [`schedules`](../reference/1-resources/schedules.md) resource.  
 
 Open another command-line window and submit the following request to retrieve a list of drivers' schedules.
 

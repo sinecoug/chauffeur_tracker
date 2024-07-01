@@ -3,7 +3,7 @@ layout: page
 ---
 # Delete a schedule for a specific driver
 
-Deletes a [`schedules`](schedules) object in the database.
+Deletes a [`schedules`](../1-resources/schedules.md) object in the database.
 
 For example, you want to delete schedule *Id=6* from the database.
 
@@ -66,4 +66,4 @@ The sample response returns a schedule matching the specified `id`, and deletes 
 
 ## Related information
 
-* [Security](../../get-started/quickstart.md#security)
+* [Security](../../get-started/2-quickstart.md#security)

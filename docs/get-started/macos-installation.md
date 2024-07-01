@@ -46,7 +46,7 @@ sudo npm install -g json-server
 git clone {Repo}
 ```
 
-Congrats, you're now ready to start the [test your system!](prereqs.md).
+Congrats, you're now ready to start the [test your system!](1-prereqs.md).
 
 ## Optional Install
 

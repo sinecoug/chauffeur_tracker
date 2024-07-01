@@ -12,7 +12,7 @@ Expect this tutorial to take about 15 minutes to complete.
 
 ## Before you start
 
-* Complete all the [prerequisites](../overview/prereqs.md) on the development system you'll use for the tutorial.
+* Complete all the [prerequisites](../get-started/1-prereqs.md) on the development system you'll use for the tutorial.
 * Open the Postman app, which you'll use to test your API calls.
 
 ## About this task
@@ -24,7 +24,7 @@ There's two parts to this task.
 
 ## Identify a driving schedule's ID
 
-To view all drivers, make a `GET` call to the [`drivers`](../reference/drivers) resource.
+To view all drivers, make a `GET` call to the [`drivers`](../reference/1-resources/drivers.md) resource.
 
 1. To create a new request in Postman, click **New** > **HTTP**. Give the request a title.
 1. Specify these request values in the right-frame window:

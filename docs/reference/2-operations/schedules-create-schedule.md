@@ -4,7 +4,7 @@ layout: page
 
 # Create a schedule
 
-Creates a driver's pick-up and drop-off [`schedules`](schedules).
+Creates a driver's pick-up and drop-off [`schedules`](../1-resources/schedules.md).
 The request body contains the new schedule details.
 You must specify the required properties for the schedule.
 
@@ -29,7 +29,7 @@ You must specify the required properties for the schedule.
 
 ## Request body
 
-In the request body, specify a JSON representation of the [`schedules`](schedules) object. The following table lists the properties that are required when you create a schedule.
+In the request body, specify a JSON representation of the [`schedules`](../1-resources/schedules.md) object. The following table lists the properties that are required when you create a schedule.
 
 | Property | Description | Type | Required | Notes |
 | -------------- | ------ | ------------ |------------ |------------ |
@@ -93,4 +93,4 @@ The following example shows the response. Note that the names should be the same
 ## Related information
 
 * [Tutorial: Create a driver's schedule](../../tutorials/2-how-to-create-a-driver-schedule.md)
-* [Security](../../get-started/quickstart.md#security)
+* [Security](../../get-started/2-quickstart.md#security)

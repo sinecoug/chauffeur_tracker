@@ -41,8 +41,8 @@ The `drivers` resource supports these operations.
 ### RETRIEVE (GET)
 
 * [Retrieve all drivers](../2-operations/drivers-get-all-drivers.md)
-* [Retrieve a specific driver](../2-operati/drivers-get-driver-by-id.md)
-* [Retrieve a driver by property](../2-operati/drivers-get-driver-by-property.md)
+* [Retrieve a specific driver](../2-operations/drivers-get-driver-by-id.md)
+* [Retrieve a driver by property](../2-operations/drivers-get-driver-by-property.md)
 
 ### CREATE (POST)
 

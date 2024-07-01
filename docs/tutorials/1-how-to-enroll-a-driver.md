@@ -14,7 +14,7 @@ Expect this tutorial to take about 15 minutes to complete.
 
 Before you start this tutorial:
 
-* Complete all the [prerequisites](../overview/prereqs.md) on the development system you'll use for the tutorial.
+* Complete all the [prerequisites](../get-started/1-prereqs.md) on the development system you'll use for the tutorial.
 * Open the Postman app, which you'll use to test your API calls.
 
 ## Enroll a new driver
@@ -30,7 +30,7 @@ To enroll a new driver, make a `POST` call to the [`drivers`](../reference/drive
     | **URL** | `{server_url}/drivers` | Required | |
     |**Headers** | `Content-Type` | Optional | The format of the data to be posted. Default value is application/json. |
 
-1. In the request body, POST a JSON representation of SallyAnn's [`drivers`](../reference/drivers) object like this. You can change the values of each property as you’d like.
+1. In the request body, POST a JSON representation of SallyAnn's [`drivers`](../reference/1-resources/drivers.md) object like this. You can change the values of each property as you’d like.
 
     ```js
         [

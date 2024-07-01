@@ -4,7 +4,7 @@ layout: page
 
 # Update a specific driver
 
-Updates a [`drivers`](drivers) object in the database.
+Updates a [`drivers`](../1-resources/drivers.md) object in the database.
 
 For example, you want to update properties associated with *driverId=4* in the database.
 
@@ -101,4 +101,4 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Security](../../get-started/quickstart.md#security)
+* [Security](../../get-started/2-quickstart.md#security)

@@ -3,7 +3,7 @@ layout: page
 ---
 # Delete a specific driver
 
-Deletes a [`drivers`](drivers) object in the database.
+Deletes a [`drivers`](../1-resources/drivers.md) object in the database.
 
 For example, you want to delete *driverId=4* from the database.
 
@@ -63,4 +63,4 @@ The sample response returns a driver matching the specified `id`, and deletes th
 
 ## Related information
 
-* [Security](../../get-started/quickstart.md#security)
+* [Security](../../get-started/2-quickstart.md#security)

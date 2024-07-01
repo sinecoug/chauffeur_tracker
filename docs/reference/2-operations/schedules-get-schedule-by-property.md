@@ -3,7 +3,7 @@ layout: page
 ---
 # Retrieve schedules by property
 
-Returns an array of driving [`schedules`](schedules) objects for specified query parameters.
+Returns an array of driving [`schedules`](../1-resources/schedules.md) objects for specified query parameters.
 
 For example, to return drivers who are scheduled to drive *Molly*, query the property `passenger` to filter responses.
 
@@ -91,4 +91,4 @@ The sample response returns drivers' schedules matching the specified `passenger
 
 ## Related information
 
-* [Security](../../get-started/quickstart.md#security)
+* [Security](../../get-started/2-quickstart.md#security)

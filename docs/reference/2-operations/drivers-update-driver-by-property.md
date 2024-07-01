@@ -4,7 +4,7 @@ layout: page
 
 # Update a driver by property
 
-Updates and replaces property instances in the [`drivers`](drivers) object.
+Updates and replaces property instances in the [`drivers`](../1-resources/drivers.md) object.
 
 For example, you want to update a single property associated with *driverId=4* in the database.
 
@@ -99,5 +99,5 @@ The following example shows the response. Note that the names should be the same
 
 ## Related information
 
-* [Tutorial: Change the status (property) of a driver's schedule](../../tutorials/tutorials/4-how-to-change-a-driver-schedule-property.md)
-* [Security](../../get-started/quickstart.md#security)
+* [Tutorial: Change the status (property) of a driver's schedule](../../tutorials/4-how-to-change-a-driver-schedule-property.md)
+* [Security](../../get-started/2-quickstart.md#security)

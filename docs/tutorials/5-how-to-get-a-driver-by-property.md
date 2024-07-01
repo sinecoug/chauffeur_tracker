@@ -14,12 +14,12 @@ Expect this tutorial to take about 15 minutes to complete.
 
 Before you start this tutorial:
 
-* Complete all the [prerequisites](../overview/prereqs.md) on the development system you'll use for the tutorial.
+* Complete all the [prerequisites](../get-started/1-prereqs.md) on the development system you'll use for the tutorial.
 * Open the Postman app, which you'll use to test your API calls.
 
 ## Retrieve a driver
 
-To view a driver in the service, make a `GET` call to the [`drivers`](../reference/drivers) resource. Add a query parameter, `driverIdentity/Mom` to filter responses.
+To view a driver in the service, make a `GET` call to the [`drivers`](../reference/1-resources/drivers.md) resource. Add a query parameter, `driverIdentity/Mom` to filter responses.
 
 1. On your desktop, open the Postman app.
 1. To create a new request, click **New** > **HTTP**. Give the request a title.

@@ -3,7 +3,7 @@ layout: page
 ---
 # Retrieve all drivers
 
-Returns an array of [`drivers`](drivers) objects who are registered with the service.
+Returns an array of [`drivers`](../1-resources/drivers.md) objects who are registered with the service.
 
 ## URL
 
@@ -68,4 +68,4 @@ None
 
 ## Related information
 
-* [Security](../../get-started/quickstart.md#security)
+* [Security](../../get-started/2-quickstart.md#security)
