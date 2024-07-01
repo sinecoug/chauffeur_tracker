@@ -36,14 +36,15 @@ Explore how to do common tasks with the API.
 
 ## API reference
 
-Discover the endpoints for these resources:
+Discover the endpoints for these resources.
 
 * [`drivers` resource](reference/1-resources/drivers.md)
 * [`schedules` resource](reference/1-resources/schedules.md)
+* [Supported endpoints](reference/3-supported-endpoints/supported-endpoints.md)
 
 ### Status codes and errors
 
-* [Error handling information](reference/4-error-handling.md) — get out of a bind if an error occurs.
+* [Error handling information](reference/4-error-handling/error-handling.md) — get out of a bind if an error occurs.
 
 ## Support
 
