@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Handling Errors in the Chauffeur Tracker service API
+# Handling Errors
 
 The Chauffeur Tracker service API follows standard HTTP status codes to indicate the success or failure of an API call. Here is an overview of common HTTP status codes and their meanings, along with typical reasons for each code.
 
