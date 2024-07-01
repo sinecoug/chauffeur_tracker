@@ -26,7 +26,7 @@ In HTTP Basic Auth, the server-side application expects an Authorization header 
     - username 
     - password
 
-If it doesn't receive it, it returns an HTTP 401 "Unauthorized" error. For more information, see [Error handling information](../reference/3-error-handling.md).
+If it doesn't receive it, it returns an HTTP 401 "Unauthorized" error. For more information, see [Error handling information](../reference/4-error-handling/error-handling.md).
 
 ## Base URL
 
